@@ -12,15 +12,15 @@ import Ticker from "../components/Ticker";
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  console.log(frontmatter.what);
+  console.log(frontmatter.singleimage);
 
   return (
     <Layout>
       <TopHeader slider={frontmatter.topslider} />
       <About data={frontmatter.what} />
       <Ticker ticker={frontmatter.ticker} />
-      <Things />
-      <SingleImage />
+      <Things things={frontmatter.things} />
+      <SingleImage image={frontmatter.singleimage} />
     </Layout>
   );
 };
@@ -62,6 +62,23 @@ export const pageQuery = graphql`
           }
         }
         ticker
+        things {
+          dotitle
+          donttitle
+          dont {
+            text
+          }
+          do {
+            text
+          }
+        }
+        singleimage {
+          childImageSharp {
+            fluid(maxWidth: 1000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

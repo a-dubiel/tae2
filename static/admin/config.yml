@@ -54,6 +54,33 @@ collections:
                 ],
             }
           - { label: Ticker, name: ticker, widget: string }
+          - {
+              label: Things,
+              name: things,
+              widget: object,
+              fields:
+                [
+                  { label: Things I Do - Title, name: dotitle, widget: string },
+                  {
+                    label: Things I Do,
+                    name: do,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: string }],
+                  },
+                  {
+                    label: Things I Don't Do - Title,
+                    name: donttitle,
+                    widget: string,
+                  },
+                  {
+                    label: Things I Don't Do,
+                    name: dont,
+                    widget: list,
+                    fields: [{ label: Text, name: text, widget: string }],
+                  },
+                ],
+            }
+            - { label: Single Image, name: singleimage, widget: image }
           # - { label: Image, name: image, widget: image }
           # - { label: Heading, name: heading, widget: string }
           # - { label: Subheading, name: subheading, widget: string }

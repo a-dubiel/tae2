@@ -16,6 +16,22 @@ what:
     Because you deserve to know that you have help from a professional in case anything major comes up out of the blue.
   image: /img/what-i-can-do.jpg
 ticker: Your personal J. Lo with a little MacGyver thrown in.
+things:
+  - dotitle: Things I happily do
+    do:
+      - text: Confirm the number of alternative milk drink choices with your bartender a week before
+      - text: Double Check that the DJ knows not to play the Macrena no matter how many times your uncle requests it
+      - text: Find an extra chair to squeeze into that last table because your cousin decided to bring her new boyfriend at the last minute
+      - text: Get your groomsman’s pants delivered to the venue asap because he brought the wrong ones
+      - text: Run the wedding schedule like a military officer
+    donttitle: Things I don't do
+    dont:
+      - text: Create a mood board and pull samples of every kind of black lace for your gothic-themed wedding
+      - text: Consult in decor or design choices for your ice sculpture
+      - text: Book or pick actual vendors that will marry you while you’re paragliding off Poo Poo Point
+      - text: Participate in any sort of DIY, Etsy-inspired art project for centerpiece (trust me, you’ll thank me for this in the long run)
+      - text: Create bonsai-inspired floral arrangements the night before
+singleimage: /img/couple.jpg
 
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience

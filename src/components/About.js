@@ -16,7 +16,6 @@ const About = ({ data }) => (
         </h2>
       </div>
       <div className="content-grid__img">
-        {console.log(data.image)}
         <img
           sizes={`${data.image.childImageSharp.fluid.sizes}`}
           src={`${data.image.childImageSharp.fluid.src}`}
