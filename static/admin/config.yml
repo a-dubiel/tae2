@@ -80,7 +80,7 @@ collections:
                   },
                 ],
             }
-            - { label: Single Image, name: singleimage, widget: image }
+          - { label: Single Image, name: singleimage, widget: image }
           # - { label: Image, name: image, widget: image }
           # - { label: Heading, name: heading, widget: string }
           # - { label: Subheading, name: subheading, widget: string }
