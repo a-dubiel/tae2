@@ -56,13 +56,15 @@ input[type="submit"] {
   }
 }
 
-.button--next {
+.button--next,
+.button--prev {
   width: 50px;
   height: 50px;
   display: block;
   font-size: 0;
   background-size: 50%;
   background-repeat: no-repeat;
+  outline: 0;
   background-position: 50%;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 174 174' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M88.77 166.31l77.194-78.848L88.963 9.207l78.083 78.078H5.9' fill='none' stroke='%23241f20' stroke-width='8.33332'/%3E%3C/svg%3E");
   transition: transform 0.3s ease-in-out;
@@ -70,6 +72,11 @@ input[type="submit"] {
   @include media-above("md") {
     height: 70px;
     width: 70px;
+  }
+
+  @include media-above("xl") {
+    height: 90px;
+    width: 90px;
   }
 
   &:hover {
@@ -78,21 +85,7 @@ input[type="submit"] {
 }
 
 .button--prev {
-  width: 50px;
-  height: 50px;
-  display: block;
-  font-size: 0;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 174 174' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M88.77 166.31l77.194-78.848L88.963 9.207l78.083 78.078H5.9' fill='none' stroke='%23241f20' stroke-width='8.33332'/%3E%3C/svg%3E");
-  transition: transform 0.3s ease-in-out;
   transform: scaleX(-1);
-
-  @include media-above("md") {
-    height: 70px;
-    width: 70px;
-  }
 
   &:hover {
     transform: scaleX(-1) translateX(5px);

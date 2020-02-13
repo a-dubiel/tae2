@@ -23,6 +23,7 @@ const IndexPage = ({ data }) => {
       <Things things={frontmatter.things} />
       <SingleImage image={frontmatter.singleimage} />
       <About data={frontmatter.about} />
+      <SingleImage image={frontmatter.singleimage2} />
     </Layout>
   );
 };
@@ -92,6 +93,13 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+            }
+          }
+        }
+        singleimage2 {
+          childImageSharp {
+            fluid(maxWidth: 1400, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

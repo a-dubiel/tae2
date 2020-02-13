@@ -38,11 +38,12 @@ about:
     I LOVE everything about a wedding day - bossing people around, getting to know your crazy Aunt Patty and finding solutions for problems that feel like the end of the world on the day of.
     There’s nothing better than watching a crazy day with upteenth details going off without a hitch - that “wedding high” is addictive and why I keep doing this.
   slider:
-    - image: /img/what-i-can-do.jpg
+    - image: /img/profile.jpg
     - image: /img/what-i-can-do.jpg
     - image: /img/what-i-can-do.jpg
   quote: Seeing two families come together and the happiness it brings may sound cheesy to some people, but I’m the biggest fan of a rom-com come to life.
   heading: And, I'm a huge fan of wedding cake. Huge.
+singleimage2: /img/table.jpg
 
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
