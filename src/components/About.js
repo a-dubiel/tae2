@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import Img from "gatsby-image";
 
-const About = ({ content }) => (
+const About = ({ data }) => (
   <section className="content-grid content-grid--reverse-mobile u-border-bottom">
     <div className="content-grid__item">
-      <div className="content-grid__text">dadsddsadsdsa</div>
+      <div className="content-grid__text">{data.content}</div>
     </div>
 
     <div className="content-grid__item">
@@ -16,22 +16,20 @@ const About = ({ content }) => (
         </h2>
       </div>
       <div className="content-grid__img">
-        {/* <Img
-          fluid={content.whatimage.childImageSharp.fluid}
+        {console.log(data.image)}
+        <img
+          sizes={`${data.image.childImageSharp.fluid.sizes}`}
+          src={`${data.image.childImageSharp.fluid.src}`}
+          srcSet={`${data.image.childImageSharp.fluid.srcSet}`}
           alt={"wedding photo"}
-        /> */}
+        />
       </div>
     </div>
   </section>
 );
 
 About.propTypes = {
-  content: PropTypes.arrayOf(
-    PropTypes.shape({
-      whatcontent: PropTypes.string,
-      whatimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
-    })
-  )
+  data: PropTypes.object
 };
 
 export default About;

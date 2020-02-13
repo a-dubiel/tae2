@@ -43,7 +43,17 @@ collections:
                   },
                 ],
             }
-          # - { label: Title, name: title, widget: string }
+          - {
+              label: What I Can Do For You,
+              name: what,
+              widget: object,
+              fields:
+                [
+                  { label: Content, name: content, widget: markdown },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - { label: Ticker, name: ticker, widget: string }
           # - { label: Image, name: image, widget: image }
           # - { label: Heading, name: heading, widget: string }
           # - { label: Subheading, name: subheading, widget: string }

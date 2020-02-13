@@ -12,13 +12,13 @@ import Ticker from "../components/Ticker";
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  console.log(frontmatter.topslider);
+  console.log(frontmatter.what);
 
   return (
     <Layout>
       <TopHeader slider={frontmatter.topslider} />
-      <About />
-      <Ticker />
+      <About data={frontmatter.what} />
+      <Ticker ticker={frontmatter.ticker} />
       <Things />
       <SingleImage />
     </Layout>
@@ -43,7 +43,7 @@ export const pageQuery = graphql`
           slides {
             image {
               childImageSharp {
-                fluid(maxWidth: 120, quality: 100) {
+                fluid(maxWidth: 1000, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -51,6 +51,17 @@ export const pageQuery = graphql`
             text
           }
         }
+        what {
+          content
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1000, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        ticker
       }
     }
   }

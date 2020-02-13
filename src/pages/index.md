@@ -2,14 +2,21 @@
 templateKey: index-page
 topslider:
   slides:
-    - image: /img/coffee.png
-      text: "Slide 1"
-    - image: /img/coffee.png
+    - image: /img/what-i-can-do.jpg
+      text: "_Day of Wedding Coordination_ for the bride who doesn’t want to lift a finger."
+    - image: /img/what-i-can-do.jpg
       text: "Slide 2"
-    - image: /img/coffee.png
+    - image: /img/what-i-can-do.jpg
       text: "Slide 3"
+what:
+  content: >
+    You hire me because you don’t want to worry about all the final details coming together for the actual wedding day.
+    Because you’ve purchased everything you can think of for your 80s-themed wedding on Etsy and need someone else to execute it seamlessly.
+    Because you’ve answered all of your future mother-in-law’s questions for the past six months and it’s time for someone else to handle her on your big day.
+    Because you deserve to know that you have help from a professional in case anything major comes up out of the blue.
+  image: /img/what-i-can-do.jpg
+ticker: Your personal J. Lo with a little MacGyver thrown in.
 
-title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
