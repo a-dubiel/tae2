@@ -5,9 +5,9 @@ const Things = ({ things }) => (
   <section className="content-grid u-border-bottom">
     <div className="content-grid__item content-grid__item--bg-peach">
       <div className="content-grid__text">
-        <h3>{things[0].dotitle}</h3>
+        <h3>{things.dotitle}</h3>
         <ul>
-          {things[0].do.map(item => (
+          {things.do.map(item => (
             <li key={item.text}>
               <i className="icon icon--circle" />
               {item.text}
@@ -18,9 +18,9 @@ const Things = ({ things }) => (
     </div>
     <div className="content-grid__item content-grid__item--bg-dark-gray">
       <div className="content-grid__text">
-        <h3>{things[0].donttitle}</h3>
+        <h3>{things.donttitle}</h3>
         <ul>
-          {things[0].dont.map(item => (
+          {things.dont.map(item => (
             <li key={item.text}>
               <i className="icon icon--times" />
               {item.text}
@@ -33,7 +33,7 @@ const Things = ({ things }) => (
 );
 
 Things.propTypes = {
-  things: PropTypes.array
+  things: PropTypes.object
 };
 
 export default Things;

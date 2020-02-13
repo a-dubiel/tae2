@@ -12,7 +12,7 @@ import Ticker from "../components/Ticker";
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  console.log(frontmatter.singleimage);
+  console.log(frontmatter);
 
   return (
     <Layout>

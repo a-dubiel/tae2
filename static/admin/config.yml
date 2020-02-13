@@ -62,18 +62,19 @@ collections:
                 [
                   { label: Things I Do - Title, name: dotitle, widget: string },
                   {
+                    label: Things I Dont Do - Title,
+                    name: donttitle,
+                    widget: string,
+                  },
+                  {
                     label: Things I Do,
                     name: do,
                     widget: list,
                     fields: [{ label: Text, name: text, widget: string }],
                   },
+
                   {
-                    label: Things I Don't Do - Title,
-                    name: donttitle,
-                    widget: string,
-                  },
-                  {
-                    label: Things I Don't Do,
+                    label: Things I Dont Do,
                     name: dont,
                     widget: list,
                     fields: [{ label: Text, name: text, widget: string }],
