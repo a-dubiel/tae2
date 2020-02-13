@@ -1,0 +1,74 @@
+/**
+ * @utility utility-name
+ * @description Utility description
+ * -----------------------------------------------------------------------------
+ */
+
+.u-hide {
+  display: none !important;
+}
+
+.u-hide--md-up {
+  @include media-above("md") {
+    display: none !important;
+  }
+}
+
+.u-hide--md-down {
+  @include media-below("md") {
+    display: none !important;
+  }
+}
+
+.u-hide--sm-down {
+  @include media-below("sm") {
+    display: none !important;
+  }
+}
+
+.u-hide--lg-down {
+  @include media-below("lg") {
+    display: none !important;
+  }
+}
+
+.u-show--lg-down {
+  display: none;
+  @include media-below("lg") {
+    display: block !important;
+  }
+}
+
+.u-hide--xl-down {
+  @include media-below("xl") {
+    display: none !important;
+  }
+}
+
+.u-text-center--md-down {
+  @include media-below("md") {
+    text-align: center;
+  }
+}
+
+.u-text-center--lg-down {
+  @include media-below("lg") {
+    text-align: center;
+  }
+}
+
+.u-text-center--xl-down {
+  @include media-below("lg") {
+    text-align: center;
+  }
+}
+
+.u-img-full { 
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.u-img-responsive {
+  min-width: 100%;
+}

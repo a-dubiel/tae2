@@ -1,0 +1,19 @@
+/**
+ * @namespace `c-`
+ * @block `grid`
+ * -----------------------------------------------------------------------------
+ */
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: $grid-margin;
+}
+
+.grid__column {
+  width: 100%;
+  position: relative;
+  padding: $grid-padding;
+}

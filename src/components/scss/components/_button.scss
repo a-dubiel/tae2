@@ -1,0 +1,110 @@
+/**
+ * @block `button`
+ * -----------------------------------------------------------------------------
+ */
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: $btn-default-bg;
+  border-radius: $btn-border-radius;
+  border: 2px solid $text-color;
+  color: $btn-default-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-heading;
+  font-weight: normal;
+  line-height: 1.25;
+  padding: $btn-padding;
+  text-align: center;
+  transition: $base-transition;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:focus,
+  &:hover {
+    background-color: darken($btn-default-bg, 10%);
+    color: $btn-default-color;
+  }
+  &:active {
+    background-color: $btn-default-bg;
+  }
+}
+
+.button--primary {
+  background-color: $brand-primary;
+  &:focus,
+  &:hover {
+    background-color: darken($brand-primary, 10%);
+    color: $btn-default-color;
+  }
+  &:active {
+    background-color: $brand-primary;
+  }
+}
+
+.button--secondary {
+  background-color: $brand-secondary;
+  &:focus,
+  &:hover {
+    background-color: darken($brand-secondary, 10%);
+    color: $btn-default-color;
+  }
+  &:active {
+    background-color: $brand-secondary;
+  }
+}
+
+.button--next {
+  width: 50px;
+  height: 50px;
+  display: block;
+  font-size: 0;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 174 174' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M88.77 166.31l77.194-78.848L88.963 9.207l78.083 78.078H5.9' fill='none' stroke='%23241f20' stroke-width='8.33332'/%3E%3C/svg%3E");
+  transition: transform 0.3s ease-in-out;
+
+  @include media-above("md") {
+    height: 70px;
+    width: 70px;
+  }
+
+  &:hover {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce-right {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(20px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+}

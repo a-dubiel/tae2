@@ -1,0 +1,57 @@
+/**
+ * @namespace `u-`
+ * @block `size-{XofY}--`
+ * -----------------------------------------------------------------------------
+ */
+
+@include make-grid('', 12);
+@include make-grid('', 2);
+@include make-grid('', 3);
+@include make-grid('', 4);
+@include make-grid('', 5);
+@include make-grid('', 6);
+
+@include media-above("xs") {
+  @include make-grid("--xs", 12);
+  @include make-grid("--xs", 2);
+  @include make-grid("--xs", 3);
+  @include make-grid("--xs", 4);
+  @include make-grid("--xs", 5);
+  @include make-grid("--xs", 6);
+}
+
+@include media-above("sm") {
+  @include make-grid("--sm", 12); 
+  @include make-grid("--sm", 2);
+  @include make-grid("--sm", 3);
+  @include make-grid("--sm", 4);
+  @include make-grid("--sm", 5);
+  @include make-grid("--sm", 6);
+}
+
+@include media-above("md") {
+  @include make-grid("--md", 12);
+  @include make-grid("--md", 2);
+  @include make-grid("--md", 3);
+  @include make-grid("--md", 4);
+  @include make-grid("--md", 5);
+  @include make-grid("--md", 6);
+}
+
+@include media-above("lg") {
+  @include make-grid("--lg", 12);
+  @include make-grid("--lg", 2);
+  @include make-grid("--lg", 3);
+  @include make-grid("--lg", 4);
+  @include make-grid("--lg", 5);
+  @include make-grid("--lg", 6);
+}
+
+@include media-above("xl") {
+  @include make-grid("--xl", 12);
+  @include make-grid("--xl", 2);
+  @include make-grid("--xl", 3);
+  @include make-grid("--xl", 4);
+  @include make-grid("--xl", 5);
+  @include make-grid("--xl", 6);
+}

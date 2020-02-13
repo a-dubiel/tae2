@@ -1,0 +1,17 @@
+/**
+ * @block `header`
+ * -----------------------------------------------------------------------------
+ */
+
+.header__logo {
+  background-color: $brand-light-blue;
+  padding: $space-sm 0;
+
+  @include media-above("md") {
+    padding: $space 0;
+  }
+
+  svg {
+    display: block;
+  }
+}

@@ -1,0 +1,60 @@
+.home {
+  width: 100%;
+  position: relative;
+
+  .wrapper {
+    height: 100%;
+  }
+}
+
+.home__logo--report {
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto;
+
+  @include media-above("md") {
+    max-width: 450px;
+    padding-left: 15px;
+  }
+
+  svg {
+    width: 100%;
+    display: block;
+    overflow: visible;
+  }
+
+  #text-top,
+  #text-bottom,
+  #circle {
+    opacity: 0;
+    transform-origin: 50%;
+  }
+
+}
+
+.home__text {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  padding: 0 $space;
+  margin-top: 15px;
+  font-size: $text-xs;
+
+  @include media-above("xs") {
+    font-size: $text-sm;
+    margin-top: 30px;
+  }
+
+  @include media-above("md") {
+    font-size: $text-md;
+    margin-top: 40px;
+  }
+
+}
+
+.fp-viewing-home {
+  .nav--desktop,
+  .nav--mobile {
+    opacity: 0;
+  }
+}

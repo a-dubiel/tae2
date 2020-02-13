@@ -1,0 +1,102 @@
+/**
+ * Core: Base
+ * -----------------------------------------------------------------------------
+ */
+* {
+  &,
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: 16px;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $bg-color;
+  text-rendering: optimizeSpeed;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  &:hover {
+    color: lighten($link-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline-width: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-heading;
+  font-size: $base-font-size;
+  color: $heading-color;
+  font-weight: $base-font-heading-weight;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin-top: $space-sm;
+  margin-bottom: $space-sm;
+  border: 0;
+  border-top: 2px solid $hr-color;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder,
+::placeholder {
+  color: $brand-gray;
+}
+
+.lazyload {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transform: scale(1.05);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}

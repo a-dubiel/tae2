@@ -1,0 +1,57 @@
+/**
+ * @object wrapper
+ * @description Wrapper
+ * -----------------------------------------------------------------------------
+ */
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $wrapper-padding;
+  padding-right: $wrapper-padding;
+
+  @include clearfix;
+
+  // @include media-above("xs") {
+  //   max-width: get-breakpoint("horizontal", "xs");
+  // }
+
+  // @include media-above("sm") {
+  //   max-width: get-breakpoint("horizontal", "sm");
+  // }
+
+  // @include media-above("md") {
+  //   max-width: get-breakpoint("horizontal", "md");
+  // }
+
+  // @include media-above("lg") {
+  //   padding-left: 50px;
+  //   max-width: get-breakpoint("horizontal", "lg");
+  // }
+
+  // @include media-above("xl") {
+  //   max-width: get-breakpoint("horizontal", "xl");
+  // }
+
+  @include media-above("huge") {
+    max-width: get-breakpoint("horizontal", "huge");
+  }
+}
+
+.wrapper--no-left {
+  @include media-above("lg") {
+    padding-left: $wrapper-padding;
+  }
+}
+
+.wrapper--extra-left {
+  @include media-above("lg") {
+    padding-left: 150px;
+  }
+}
+
+.wrapper--xl {
+  @include media-above("xl") {
+    max-width: get-breakpoint("horizontal", "xl");
+  }
+}

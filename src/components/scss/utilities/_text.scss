@@ -1,0 +1,258 @@
+/**
+ * @utility utility-name
+ * @description Utility description
+ * -----------------------------------------------------------------------------
+ */
+
+.u-font--heading {
+  font-family: $base-font-heading;
+}
+
+.u-text-bold {
+  font-weight: 600;
+}
+
+.u-text-superbold {
+  font-weight: 800;
+}
+
+.u-text-center--md-down {
+  @include media-below("md") {
+    text-align: center;
+  }
+}
+
+.u-text-center--sm-up {
+  @include media-above("sm") {
+    text-align: center;
+  }
+}
+
+.u-text-right--md-down {
+  @include media-below("md") {
+    text-align: right;
+  }
+}
+
+.u-text-center--lg-down {
+  @include media-below("lg") {
+    text-align: center;
+  }
+}
+
+.u-text-center--sm-down {
+  @include media-below("sm") {
+    text-align: center;
+  }
+}
+
+.u-text-center--xl-down {
+  @include media-below("lg") {
+    text-align: center;
+  }
+}
+
+.u-text-right {
+  text-align: right;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-text-left {
+  text-align: left;
+}
+
+.u-ellipsis {
+  max-width: 99%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.u-text-base {
+  font-family: $base-font;
+}
+
+.u-text-semi-bold {
+  font-weight: 500 !important;
+}
+
+.u-text-normal {
+  font-weight: 400;
+}
+
+.u-text--xs {
+  font-size: $text-xs;
+}
+
+.u-text--sm {
+  font-size: $text-sm;
+}
+
+.u-text--base {
+  font-size: $text-base;
+}
+
+.u-text--md {
+  font-size: $text-md;
+}
+
+.u-text--lg {
+  font-size: $text-lg;
+}
+
+.u-text--xl {
+  font-size: $text-xl;
+}
+
+.u-text--xxl {
+  font-size: $text-xl;
+}
+
+
+.u-text-gray {
+  color: $brand-gray;
+}
+
+.u-text-lowercase {
+  text-transform: lowercase;
+}
+
+.u-text-light {
+  font-weight: 300;
+}
+
+.u-text-bold {
+  font-weight: 600;
+}
+
+// .u-text-transition {
+//   position: relative;
+//   display: inline-block;
+//
+//   &:before {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     overflow: hidden;
+//     max-width: 0;
+//     color: $brand-green;
+//     content: attr(data-hover);
+//     transition: max-width 0.5s;
+//   }
+//
+//   &:hover {
+//     &:before {
+//       max-width: 100%;
+//     }
+//   }
+// }
+
+.u-text-green {
+  color: $brand-green;
+}
+
+.u-text-black {
+  color: $brand-black;
+}
+
+.u-text-highlight-green {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -2.5%;
+    bottom: 2px;
+    width: 105%;
+    height: 11px;
+    background-color: $brand-green;
+    z-index: -1;
+    transition: width .3s ease-in-out .7s;
+
+    @include media-below("lg") {
+      display: none;
+    }
+  }
+
+  &--animated {
+
+    &:before {
+      width: 0;
+    }
+
+    .fp-completely &:before {
+      width: 105%;
+    }
+  }
+
+}
+
+.u-text-highlight-green--animated {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -2.5%;
+    bottom: 2px;
+    width: 0;
+    height: 11px;
+    background-color: $brand-green;
+    z-index: -1;
+    transition: width .3s ease-in-out .5s;
+
+    @include media-below("lg") {
+      display: none;
+    }
+  }
+
+  .fp-completely &:before {
+    width: 105%;
+  }
+
+}
+
+.u-text-highlight-orange {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: -1px;
+    width: 110%;
+    height: 8px;
+    background-color: $brand-orange;
+    z-index: -1;
+  }
+}
+
+.u-text-highlight-orange--animated {
+  position: relative;
+  z-index:1;
+
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -5%;
+    bottom: 2px;
+    width: 0%;
+    height: 12px;
+    background-color: $brand-orange;
+    z-index: -1;
+    transition: width .3s ease-in-out 3s;
+
+    @include media-below("lg") {
+      transition: width .3s ease-in-out;
+    }
+  }
+
+  .fp-completely &:before {
+    width: 110%;
+  }
+}

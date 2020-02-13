@@ -1,0 +1,136 @@
+/* Forms */
+button,
+input,
+label,
+select,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  background: none;
+  /* Browsers have different default form fonts */
+  font-family: $base-font;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  border-radius: $border-radius;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0;
+}
+/* Text Inputs
+-----------------------------------------------*/
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week] {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  transition: $base-transition;
+  background-color: $input-bg-color;
+
+}
+/* Button Controls
+-----------------------------------------------*/
+input[type="radio"],
+input[type=checkbox] {
+  width: 13px;
+  height: 13px;
+}
+/* File Uploads
+-----------------------------------------------*/
+input[type=file] {}
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none;
+}
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+  width: 100%;
+  color: $text-color;
+  transition: $base-transition;
+  cursor: pointer;
+}
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto;
+  padding: $btn-padding;
+  margin: 0;
+  display: block;
+  width: 100%;
+  resize: none;
+  min-height: 180px;
+  background-color: $input-bg-color;
+  outline: 0;
+  white-space: pre;
+}
+/* Selects
+-----------------------------------------------*/
+select {}
+
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top;
+}
+
+::-webkit-input-placeholder {
+  color: $text-placeholder-color;
+}
+
+::-moz-placeholder {
+  color: $text-placeholder-color;
+}
+
+:-ms-input-placeholder {
+  color: $text-placeholder-color;
+}
+
+::-ms-input-placeholder {
+  color: $text-placeholder-color;
+}
+
+::placeholder {
+  color: $text-placeholder-color;
+}

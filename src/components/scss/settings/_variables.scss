@@ -1,0 +1,137 @@
+////
+/// Global variables
+/// @group Globals
+////
+
+// Breakpoints
+$breakpoints: (
+  "horizontal": (
+    "xs": 375px,
+    "sm": 500px,
+    "md": 700px,
+    "lg": 960px,
+    "xl": 1180px,
+    "xxl": 1200px,
+    "huge": 2400px
+  ),
+  "vertical": (
+    "xs": 300px,
+    "sm": 450px,
+    "md": 600px,
+    "lg": 750px,
+    "xl": 800px,
+    "xxl": 1100px
+  )
+);
+
+// Base
+$base-font: "Athletics", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-heading: $base-font;
+
+$base-font-size: 22px;
+$base-font-weight: 400;
+$base-font-heading-weight: 400;
+$base-line-height: 1.4;
+$border-radius: 2px;
+
+// Brand
+$brand-gray: hsl(170, 5, 94);
+$brand-pink: #fc0f9a;
+$brand-green: #00ab69;
+$brand-gray: #eee;
+$brand-white: #fff;
+$brand-black: #000;
+$brand-brownish: rgb(96, 96, 91);
+$brand-orange: #ff8246;
+$brand-light-gray-blue: #b6b8ba;
+
+$brand-light-blue: #d1d8ed;
+$brand-yellow: #fffc38;
+$brand-peach: #feebd2;
+$brand-dark-gray: #c6c5c5;
+
+$brand-primary: $brand-green;
+$brand-secondary: $brand-pink;
+
+// Typography
+$text-color: hsl(348, 6, 13);
+$heading-color: $text-color;
+$text-placeholder-color: #b0b0b0;
+$text-gray: #75787b;
+$link-color: $brand-green;
+
+// Typography sizing
+$text-xxs: 14px;
+$text-xs: 16px;
+$text-sm: 18px;
+$text-base: $base-font-size;
+$text-md: 26px;
+$text-md-bump: 32px;
+$text-lg: 46px;
+$text-xl: 68px;
+$text-xxl: 75px;
+
+// Spacing
+$space-xs: 5px;
+$space-sm: 10px;
+$space: 20px;
+$space-md: 40px;
+$space-lg: 60px;
+$space-xl: 100px;
+
+// Bg Colors
+$bg-color: #fff;
+$bg-footer: $bg-color;
+
+// Borders
+$border-color: #000;
+$hr-color: $brand-white;
+
+// Transitions
+$base-transition: all 0.3s ease-in-out;
+$base-transition-duration: 0.3s;
+$base-transition-function: ease-in-out;
+
+// Grid
+$grid-padding: 5px;
+$grid-margin: 0 -5px;
+
+// Wrapper
+$wrapper-padding: 10px;
+
+// Buttons
+$btn-border-radius: 50px;
+$btn-padding: 10px 20px;
+$btn-padding-md: 15px 25px;
+$btn-padding-lg: 20px 30px;
+$btn-default-bg: $brand-yellow;
+$btn-default-color: $text-color;
+
+// Transitions
+$base-transition: all 0.3s ease-in-out;
+$base-transition-timing: 0.3s;
+$base-transition-easing: ease-in-out;
+
+// Brand colors
+$color-amazon: hsla(36, 100%, 50%, 1); // #ff9700
+$color-apple: hsla(0, 0%, 45%, 1); // #737373
+$color-basecamp: hsla(121, 38%, 58%, 1); // #6bbd6d
+$color-box: hsla(204, 83%, 40%, 1); // #1277bc
+$color-dribbble: hsla(338, 82%, 60%, 1); // #ed4584
+$color-dropbox: hsla(206, 89%, 46%, 1); // #0d84de
+$color-ebay: hsla(219, 89%, 30%, 1); // #083790
+$color-facebook: hsla(222, 47%, 40%, 1); // #365397
+$color-flickr: hsla(334, 100%, 46%, 1); // #ea0066
+$color-foursquare: hsla(206, 72%, 45%, 1); // #207dc5
+$color-github: hsla(0, 0%, 18%, 1); // #2f2f2f
+$color-google: hsla(217, 89%, 61%, 1); // #4285f4
+$color-google_plus: hsla(8, 74%, 53%, 1); // #e0452c
+$color-instagram: hsla(208, 46%, 41%, 1); // #396d9a
+$color-linkedin: hsla(203, 100%, 35%, 1); // #006db3
+$color-pinterest: hsla(0, 78%, 45%, 1); // #ce1a19
+$color-skype: hsla(198, 100%, 48%, 1); // #00acf4
+$color-tumblr: hsla(210, 37%, 30%, 1); // #304c68
+$color-twitter: hsla(198, 100%, 47%, 1); // #00a9f1
+$color-vimeo: hsla(200, 82%, 61%, 1); // #48b6ed
+$color-yelp: hsla(5, 100%, 38%, 1); // #c30f00
+$color-youtube: hsla(0, 100%, 60%, 1); // #ff3333

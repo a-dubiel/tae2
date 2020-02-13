@@ -1,0 +1,62 @@
+.share-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+
+  li {
+    border-right: 1px solid $border-color;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+
+}
+
+.share-buttons__item {
+  height: 45px;
+  width: 45px;
+  background-color: $brand-gray;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+
+    svg {
+      opacity: 1;
+    }
+  }
+
+  svg {
+    width: 20px;
+    opacity: .6;
+  }
+
+  g {
+    fill: #b2bbc1;
+  }
+
+  &--facebook {
+    &:hover {
+      g {
+        fill: $color-facebook;
+      }
+    }
+  }
+
+  &--twitter {
+    &:hover {
+      g {
+        fill: $color-twitter;
+      }
+    }
+  }
+
+  &--google {
+    &:hover {
+      g {
+        fill: $color-google_plus;
+      }
+    }
+  }
+}
