@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const TopHeader = ({ data }) => (
+const TopHeader = ({ slider }) => (
   <header className="header">
+    {console.log(slider)}
     <div className="header__logo u-border-bottom">
       <div className="wrapper">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1219.65 120.09">
@@ -21,55 +22,33 @@ const TopHeader = ({ data }) => (
       </div>
     </div>
     <div className="main-slider js-main-slider">
-      <div className="main-slider__slide">
-        <div className="main-slider__item u-border-bottom">
-          <div
-            className="main-slider__photo"
-            style={{ backgroundImage: "url(http://unsplash.it/800/600)" }}
-          />
-          <div className="main-slider__content">
-            <div className="main-slider__text">
-              <button className="main-slider__button button--next js-main-slider-next">
-                Next
-              </button>
-              <h1 className="main-slider__title">
-                Day of Wedding Coordination for the bride who deosn't want to
-                lift a finger.
-              </h1>
+      {slider.slides.map(item => (
+        <div key={item.text} className="main-slider__slide">
+          <div className="main-slider__item u-border-bottom">
+            <div
+              className="main-slider__photo"
+              style={{
+                backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
+              }}
+            />
+            <div className="main-slider__content">
+              <div className="main-slider__text">
+                <button className="main-slider__button button--next js-main-slider-next">
+                  Next
+                </button>
+                <h1 className="main-slider__title">{item.text}</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="main-slider__slide">
-        <div className="main-slider__item u-border-bottom">
-          <div
-            className="main-slider__photo"
-            style={{ backgroundImage: "url(http://unsplash.it/800/600)" }}
-          />
-          <div className="main-slider__content">
-            <div className="main-slider__text">
-              <button className="main-slider__button button--next js-main-slider-next">
-                Next
-              </button>
-              <h3 className="main-slider__title">Lorem ipsum dolor amet.</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
     <div className="stripes u-border-bottom" />
   </header>
 );
 
 TopHeader.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      plan: PropTypes.string,
-      price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      description: PropTypes.string,
-      items: PropTypes.array
-    })
-  )
+  slider: PropTypes.object
 };
 
 export default TopHeader;

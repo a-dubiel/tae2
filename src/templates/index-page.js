@@ -10,11 +10,13 @@ import Things from "../components/Things";
 import Ticker from "../components/Ticker";
 
 const IndexPage = ({ data }) => {
-  // const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark;
+
+  console.log(frontmatter.topslider);
 
   return (
     <Layout>
-      <TopHeader />
+      <TopHeader slider={frontmatter.topslider} />
       <About />
       <Ticker />
       <Things />
@@ -32,6 +34,27 @@ IndexPage.propTypes = {
 };
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query IndexPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      frontmatter {
+        topslider {
+          slides {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 120, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+        }
+      }
+    }
+  }
+`;
 
 // export const pageQuery = graphql`
 //   query IndexPageTemplate {
