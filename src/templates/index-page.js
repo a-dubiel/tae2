@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import About from "../components/About";
+import What from "../components/What";
 import TopHeader from "../components/TopHeader";
 import SingleImage from "../components/SingleImage";
 import Things from "../components/Things";
 import Ticker from "../components/Ticker";
+import About from "../components/About";
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -17,10 +18,11 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <TopHeader slider={frontmatter.topslider} />
-      <About data={frontmatter.what} />
+      <What data={frontmatter.what} />
       <Ticker ticker={frontmatter.ticker} />
       <Things things={frontmatter.things} />
       <SingleImage image={frontmatter.singleimage} />
+      <About data={frontmatter.about} />
     </Layout>
   );
 };
@@ -76,6 +78,20 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 1000, quality: 100) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        about {
+          content
+          quote
+          heading
+          slider {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }

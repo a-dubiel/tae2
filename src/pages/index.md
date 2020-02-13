@@ -32,6 +32,17 @@ things:
     - text: Participate in any sort of DIY, Etsy-inspired art project for centerpiece (trust me, you’ll thank me for this in the long run)
     - text: Create bonsai-inspired floral arrangements the night before
 singleimage: /img/couple.jpg
+about:
+  content: >
+    My name is Alice Chi Martin and I’m a busy working mom with two young kids and a day job that I love. The first time I helped coordinate a wedding was fifteen years ago for my best friend. I have been hooked ever since.
+    I LOVE everything about a wedding day - bossing people around, getting to know your crazy Aunt Patty and finding solutions for problems that feel like the end of the world on the day of.
+    There’s nothing better than watching a crazy day with upteenth details going off without a hitch - that “wedding high” is addictive and why I keep doing this.
+  slider:
+    - image: /img/what-i-can-do.jpg
+    - image: /img/what-i-can-do.jpg
+    - image: /img/what-i-can-do.jpg
+  quote: Seeing two families come together and the happiness it brings may sound cheesy to some people, but I’m the biggest fan of a rom-com come to life.
+  heading: And, I'm a huge fan of wedding cake. Huge.
 
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience

@@ -60,7 +60,7 @@ export default class TopHeader extends React.Component {
                   <div className="main-slider__text">
                     <button
                       onClick={this.nextSlide}
-                      className="main-slider__button button--next js-main-slider-next"
+                      className="main-slider__button button--next"
                     >
                       Next
                     </button>

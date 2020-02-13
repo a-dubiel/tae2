@@ -1,0 +1,40 @@
+.photo-slider {
+  min-height: 100%;
+  margin-bottom: -9px;
+}
+
+.photo-slider__item {
+}
+
+.photo-slider__img {
+  height: 0;
+  padding-bottom: 70%;
+  background-size: cover;
+  width: 100%;
+}
+
+.photo-slider__button {
+  position: absolute;
+  z-index: 1000;
+  bottom: $space;
+
+  &.button--prev {
+    left: $space;
+  }
+
+  &.button--next {
+    right: $space;
+  }
+
+  @include media-above("md") {
+    bottom: $space-md;
+
+    &.button--prev {
+      left: $space-md;
+    }
+
+    &.button--next {
+      right: $space-md;
+    }
+  }
+}

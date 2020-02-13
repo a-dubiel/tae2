@@ -10,7 +10,6 @@ const SingleImage = ({ image }) => (
       alt={"couple"}
     />
   </div>
-  // 2WkN$Ye*G0
 );
 
 SingleImage.propTypes = {

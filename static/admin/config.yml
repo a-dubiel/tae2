@@ -62,17 +62,16 @@ collections:
                 [
                   { label: Things I Do - Title, name: dotitle, widget: string },
                   {
-                    label: Things I Dont Do - Title,
-                    name: donttitle,
-                    widget: string,
-                  },
-                  {
                     label: Things I Do,
                     name: do,
                     widget: list,
                     fields: [{ label: Text, name: text, widget: string }],
                   },
-
+                  {
+                    label: Things I Dont Do - Title,
+                    name: donttitle,
+                    widget: string,
+                  },
                   {
                     label: Things I Dont Do,
                     name: dont,
@@ -82,6 +81,23 @@ collections:
                 ],
             }
           - { label: Single Image, name: singleimage, widget: image }
+          - {
+              label: About Me,
+              name: about,
+              widget: object,
+              fields:
+                [
+                  { label: Content, name: content, widget: markdown },
+                  {
+                    label: Slider,
+                    name: slider,
+                    widget: list,
+                    fields: [{ label: Image, name: image, widget: image }],
+                  },
+                  { label: Quote, name: quote, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                ],
+            }
           # - { label: Image, name: image, widget: image }
           # - { label: Heading, name: heading, widget: string }
           # - { label: Subheading, name: subheading, widget: string }
