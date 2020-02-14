@@ -46,6 +46,10 @@
   &--no-border-r {
     border-right: 0;
   }
+
+  &--top {
+    justify-content: flex-start;
+  }
 }
 
 .content-grid__slider {
@@ -245,7 +249,7 @@
 
 .content-grid__heading {
   text-transform: uppercase;
-  font-size: $text-lg;
+  font-size: $text-md;
   line-height: 1.1;
   font-weight: 700;
   text-align: center;
@@ -253,16 +257,25 @@
 
   @include media-above("md") {
     padding: $space-lg;
+    font-size: $text-lg;
   }
 }
 
 .content-grid__quote {
   text-align: center;
   padding: $space-md;
-  font-size: $text-md;
   font-style: italic;
+  border-bottom: 2px solid #000;
 
-  @include media-above("md") {
+  @include media-above("lg") {
     padding: $space-lg;
+    font-size: $text-md;
+    border: 0;
   }
+}
+
+.content-grid__slider-2 {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
 }

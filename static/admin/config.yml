@@ -99,6 +99,25 @@ collections:
                 ],
             }
           - { label: Single Image, name: singleimage2, widget: image }
+          - {
+              label: Testimonials,
+              name: testimonials,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Slider,
+                    name: slider,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Quote, name: quote, widget: string },
+                        { label: Author, name: author, widget: string },
+                      ],
+                  },
+                ],
+            }
           # - { label: Image, name: image, widget: image }
           # - { label: Heading, name: heading, widget: string }
           # - { label: Subheading, name: subheading, widget: string }

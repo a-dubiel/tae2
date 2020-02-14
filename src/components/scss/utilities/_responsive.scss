@@ -63,7 +63,7 @@
   }
 }
 
-.u-img-full { 
+.u-img-full {
   display: block;
   width: 100%;
   height: auto;
@@ -71,4 +71,20 @@
 
 .u-img-responsive {
   min-width: 100%;
+}
+
+.u-hide-mobile {
+  display: none;
+
+  @include media-above("lg") {
+    display: block;
+  }
+}
+
+.u-show-mobile {
+  display: block;
+
+  @include media-above("lg") {
+    display: none;
+  }
 }

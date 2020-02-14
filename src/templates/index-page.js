@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-
 import Layout from "../components/Layout";
 import What from "../components/What";
 import TopHeader from "../components/TopHeader";
@@ -9,6 +8,7 @@ import SingleImage from "../components/SingleImage";
 import Things from "../components/Things";
 import Ticker from "../components/Ticker";
 import About from "../components/About";
+import Testimonials from "../components/Testimonials";
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -24,6 +24,7 @@ const IndexPage = ({ data }) => {
       <SingleImage image={frontmatter.singleimage} />
       <About data={frontmatter.about} />
       <SingleImage image={frontmatter.singleimage2} />
+      <Testimonials testimonials={frontmatter.testimonials} />
     </Layout>
   );
 };
@@ -101,6 +102,19 @@ export const pageQuery = graphql`
             fluid(maxWidth: 1400, quality: 100) {
               ...GatsbyImageSharpFluid
             }
+          }
+        }
+        testimonials {
+          slider {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            quote
+            author
           }
         }
       }

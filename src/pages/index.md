@@ -44,6 +44,20 @@ about:
   quote: Seeing two families come together and the happiness it brings may sound cheesy to some people, but I’m the biggest fan of a rom-com come to life.
   heading: And, I'm a huge fan of wedding cake. Huge.
 singleimage2: /img/table.jpg
+testimonials:
+  slider:
+    - image: /img/what-i-can-do.jpg
+      quote: >
+        My husband and I left our wedding day with the notion that everything went perfectly. The more I spoke with family & friends, the more that this notion was confirmed. Many guests + friends raved of Alice and her get-sh!t done attitude.
+      author: Oprah & Stedman
+    - image: /img/what-i-can-do.jpg
+      quote: >
+        Quote 2
+      author: Name
+    - image: /img/what-i-can-do.jpg
+      quote: >
+        Quote 3
+      author: Name
 
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
