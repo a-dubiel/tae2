@@ -58,7 +58,7 @@ $text-color: hsl(348, 6, 13);
 $heading-color: $text-color;
 $text-placeholder-color: #b0b0b0;
 $text-gray: #75787b;
-$link-color: $brand-green;
+$link-color: $text-color;
 
 // Typography sizing
 $text-xxs: 14px;
@@ -101,7 +101,7 @@ $wrapper-padding: 10px;
 
 // Buttons
 $btn-border-radius: 50px;
-$btn-padding: 10px 20px;
+$btn-padding: 20px 30px 15px;
 $btn-padding-md: 15px 25px;
 $btn-padding-lg: 20px 30px;
 $btn-default-bg: $brand-yellow;

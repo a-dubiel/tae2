@@ -50,10 +50,6 @@ a {
   text-decoration: none;
   color: $link-color;
 
-  &:hover {
-    color: lighten($link-color, 15%);
-  }
-
   &:active,
   &:focus {
     outline-width: 0;

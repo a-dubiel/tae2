@@ -30,7 +30,8 @@ export default class Testimonials extends React.Component {
       speed: 1000,
       autoplaySpeed: 8000,
       autoplay: true,
-      slidesToShow: 1
+      slidesToShow: 1,
+      asNavFor: this.sliderOne
       // fade: true
     };
     return (
@@ -65,11 +66,18 @@ export default class Testimonials extends React.Component {
             >
               {testimonials.slider.map(item => (
                 <div key={item.image.id} className="photo-slider__item">
-                  <div
+                  {/* <div
                     className="photo-slider__img"
                     style={{
                       backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
                     }}
+                  /> */}
+                  <img
+                    sizes={`${item.image.childImageSharp.fluid.sizes}`}
+                    src={`${item.image.childImageSharp.fluid.src}`}
+                    srcSet={`${item.image.childImageSharp.fluid.srcSet}`}
+                    alt={"couple"}
+                    className="photo-slider__img"
                   />
                 </div>
               ))}
@@ -85,18 +93,20 @@ export default class Testimonials extends React.Component {
             </h2>
           </div>
           <div className="content-grid__text">
-            <Slider
-              ref={slider => (this.sliderTwo = slider)}
-              className="quote-slider"
-              {...settingsTwo}
-            >
-              {testimonials.slider.map(item => (
-                <blockquote key={item.author} className="quote-slider__quote">
-                  <p>{item.quote}</p>
-                  <cite> &mdash; {item.author}</cite>
-                </blockquote>
-              ))}
-            </Slider>
+            <div className="quote-slider">
+              <Slider
+                ref={slider => (this.sliderTwo = slider)}
+                {...settingsTwo}
+                className="quote-slider__instance"
+              >
+                {testimonials.slider.map(item => (
+                  <blockquote key={item.author} className="quote-slider__quote">
+                    <p>{item.quote}</p>
+                    <cite> &mdash; {item.author}</cite>
+                  </blockquote>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </section>

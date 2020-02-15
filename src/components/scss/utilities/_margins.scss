@@ -4,23 +4,23 @@
  * -----------------------------------------------------------------------------
  */
 
- @for $i from 0 through 10 {
-   .u-mt#{$i} {
-     margin-top: $i * 10px !important;
-   }
+@for $i from 0 through 10 {
+  .u-mt#{$i} {
+    margin-top: $i * 10px !important;
+  }
 
-   .u-mr#{$i} {
-     margin-right: $i * 10px !important;
-   }
+  .u-mr#{$i} {
+    margin-right: $i * 10px !important;
+  }
 
-   .u-mb#{$i} {
-     margin-bottom: $i * 10px !important;
-   }
+  .u-mb#{$i} {
+    margin-bottom: $i * 10px !important;
+  }
 
-   .u-ml#{$i} {
-     margin-left: $i * 10px !important;
-   }
- }
+  .u-ml#{$i} {
+    margin-left: $i * 10px !important;
+  }
+}
 
 .u-mhorz-auto {
   margin-left: auto;

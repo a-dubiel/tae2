@@ -14,21 +14,23 @@ input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-heading;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 1.25;
   padding: $btn-padding;
   text-align: center;
   transition: $base-transition;
   user-select: none;
   vertical-align: middle;
+  text-transform: uppercase;
   white-space: nowrap;
   &:focus,
   &:hover {
-    background-color: darken($btn-default-bg, 10%);
-    color: $btn-default-color;
+    background-color: #000;
+    color: #fff;
   }
   &:active {
     background-color: $btn-default-bg;
+    color: $btn-default-color;
   }
 }
 
@@ -81,6 +83,12 @@ input[type="submit"] {
 
   &:hover {
     transform: translateX(5px);
+    background-color: $btn-default-bg;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $btn-default-bg;
   }
 }
 
@@ -89,6 +97,55 @@ input[type="submit"] {
 
   &:hover {
     transform: scaleX(-1) translateX(5px);
+  }
+}
+
+.button--contact {
+  font-size: $text-lg;
+  display: block;
+  line-height: 1.3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button--underline {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button--icon {
+  font-size: $text-lg;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    background-color: $brand-yellow;
+    border: 2px solid #000;
+    bottom: -8px;
+    margin-right: $space-sm;
+
+    svg {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 

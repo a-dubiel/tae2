@@ -103,7 +103,8 @@
   }
 
   p,
-  li {
+  li,
+  cite {
     margin-bottom: $space;
 
     &:last-child {
@@ -113,6 +114,10 @@
     @include media-above("xl") {
       font-size: $text-md;
     }
+  }
+
+  cite {
+    font-style: normal;
   }
 
   li {
@@ -139,9 +144,12 @@
 
 .content-grid__img {
   position: relative;
+  flex: 1;
   img {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
