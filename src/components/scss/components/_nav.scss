@@ -172,4 +172,8 @@
     height: 28px;
     width: auto;
   }
+
+  @include media-above("lg") {
+    display: none;
+  }
 }
