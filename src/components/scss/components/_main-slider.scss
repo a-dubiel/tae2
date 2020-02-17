@@ -1,19 +1,5 @@
 .main-slider {
   margin-bottom: -7px;
-
-  // .slick-list,
-  // .slick-track,
-  // .main-slider__slide {
-  //   height: 100%;
-  // }
-
-  // .slick-slide > div {
-  //   height: 100%;
-  // }
-
-  // .slick-slide {
-  //   min-height: 100%;
-  // }
 }
 .main-slider__item {
   display: flex;
@@ -59,11 +45,19 @@
 }
 
 .main-slider__title {
-  font-size: $text-lg;
-  line-height: 1.05;
+  span,
+  p {
+    font-size: $text-lg;
+    line-height: 1.05;
 
-  @include media-above("md") {
-    font-size: 4vw;
+    @include media-above("md") {
+      font-size: 4vw;
+    }
+  }
+
+  strong {
+    text-decoration: underline !important;
+    font-style: normal !important;
   }
 }
 

@@ -4,7 +4,7 @@ topslider:
   slides:
     - image: /img/what-i-can-do.jpg
       text: >-
-        _Day of Wedding Coordination_ for the bride who doesn’t want to lift a
+        **Day of Wedding Coordination** for the bride who doesn’t want to lift a
         finger.
     - image: /img/what-i-can-do.jpg
       text: Slide 2
@@ -69,7 +69,7 @@ about:
     the end of the world on the day of. There’s nothing better than watching a
     crazy day with upteenth details going off without a hitch - that “wedding
     high” is addictive and why I keep doing this.
-  heading: 'And, I''m a huge fan of wedding cake. Huge.'
+  heading: "And, I'm a huge fan of wedding cake. Huge."
   quote: >-
     Seeing two families come together and the happiness it brings may sound
     cheesy to some people, but I’m the biggest fan of a rom-com come to life.
@@ -97,14 +97,13 @@ testimonials:
         Quote 3
 contact:
   buttonlabel: Click to fill out the form
-  buttonurl: 'http://www.example.com'
+  buttonurl: "http://www.example.com"
   contacttext: "If you have specific questions and would like to\Pchat please call me or email, thank you!"
   email: alice@type-a-events.com
-  facebook: 'https://facebook.com'
+  facebook: "https://facebook.com"
   image: /img/jlo.jpg
-  instagram: 'https://instagram.com'
+  instagram: "https://instagram.com"
   introtext: "I would love to hear all about your future big\Pday and how I fit into the puzzle. Please fill out\Pthis tidy little form, so I can get as much\P information about your needs as possible.\n"
   phone: +1 206-240-6518
   pressemail: info@type-a-events.com
 ---
-
