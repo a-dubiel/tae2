@@ -7,7 +7,10 @@ const What = ({ data }) => (
     className="content-grid content-grid--reverse-mobile u-border-bottom"
   >
     <div className="content-grid__item">
-      <div className="content-grid__text">{data.content}</div>
+      <div
+        className="content-grid__text"
+        dangerouslySetInnerHTML={{ __html: data.content }}
+      />
     </div>
 
     <div className="content-grid__item">

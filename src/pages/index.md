@@ -10,7 +10,8 @@ topslider:
       text: "Slide 3"
 what:
   content: >
-    You hire me because you don’t want to worry about all the final details coming together for the actual wedding day.
+    # dadasda
+    <p>You hire me because you don’t want to worry about all the final details coming together for the actual wedding day.</p>
     Because you’ve purchased everything you can think of for your 80s-themed wedding on Etsy and need someone else to execute it seamlessly.
     Because you’ve answered all of your future mother-in-law’s questions for the past six months and it’s time for someone else to handle her on your big day.
     Because you deserve to know that you have help from a professional in case anything major comes up out of the blue.
@@ -34,7 +35,7 @@ things:
 singleimage: /img/couple.jpg
 about:
   content: >
-    My name is Alice Chi Martin and I’m a busy working mom with two young kids and a day job that I love. The first time I helped coordinate a wedding was fifteen years ago for my best friend. I have been hooked ever since.
+    <p>My name is Alice Chi Martin and I’m a busy working mom with two young kids and a day job that I love. The first time I helped coordinate a wedding was fifteen years ago for my best friend. I have been hooked ever since.</p>
     I LOVE everything about a wedding day - bossing people around, getting to know your crazy Aunt Patty and finding solutions for problems that feel like the end of the world on the day of.
     There’s nothing better than watching a crazy day with upteenth details going off without a hitch - that “wedding high” is addictive and why I keep doing this.
   slider:

@@ -63,12 +63,6 @@ export default class Testimonials extends React.Component {
             >
               {testimonials.slider.map(item => (
                 <div key={item.image.id} className="photo-slider__item">
-                  {/* <div
-                    className="photo-slider__img"
-                    style={{
-                      backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
-                    }}
-                  /> */}
                   <img
                     sizes={`${item.image.childImageSharp.fluid.sizes}`}
                     src={`${item.image.childImageSharp.fluid.src}`}
