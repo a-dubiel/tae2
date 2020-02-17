@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
+import { Remarkable } from "remarkable";
 
 export default class About extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ export default class About extends React.Component {
   }
   render() {
     const { data } = this.props;
+    const md = new Remarkable();
     const settings = {
       arrows: false,
       speed: 1000,
@@ -65,9 +67,10 @@ export default class About extends React.Component {
           </div>
         </div>
         <div className="content-grid__item u-border-bottom content-grid__item--no-border-r">
-          <div className="content-grid__text">
-            <p>{data.content}</p>
-          </div>
+          <div
+            className="content-grid__text"
+            dangerouslySetInnerHTML={{ __html: md.render(data.content) }}
+          />
         </div>
         <div className="content-grid__item content-grid__item--bg-light-blue">
           <blockquote className="content-grid__quote">

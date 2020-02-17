@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
+import { Remarkable } from "remarkable";
 
 export default class TopHeader extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ export default class TopHeader extends React.Component {
   }
   render() {
     const { slider } = this.props;
+    const md = new Remarkable();
     const settings = {
       arrows: false,
       speed: 1000,
@@ -64,7 +66,13 @@ export default class TopHeader extends React.Component {
                     >
                       Next
                     </button>
-                    <h1 className="main-slider__title">{item.text}</h1>
+                    <h3 className="main-slider__title">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: md.render(item.text)
+                        }}
+                      />
+                    </h3>
                   </div>
                 </div>
               </div>
