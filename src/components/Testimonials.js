@@ -39,8 +39,8 @@ export default class Testimonials extends React.Component {
         <div className="content-grid__item">
           <div className="content-grid__title u-show-mobile">
             <h2>
-              <span className="top">Kind</span>
-              <span className="bottom">Words</span>
+              <span>Kind</span>
+              <span>Words</span>
             </h2>
           </div>
           <div className="content-grid__slider-2">
@@ -85,8 +85,8 @@ export default class Testimonials extends React.Component {
         <div className="content-grid__item content-grid__item--bg-peach content-grid__item--top">
           <div className="content-grid__title u-hide-mobile">
             <h2>
-              <span className="top">Kind</span>
-              <span className="bottom">Words</span>
+              <span>Kind</span>
+              <span>Words</span>
             </h2>
           </div>
           <div className="content-grid__text">

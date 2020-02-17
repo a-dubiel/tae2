@@ -198,13 +198,13 @@
         padding: 12px 10px 8px;
       }
 
-      &.top {
+      &:nth-child(1) {
         top: 0;
         left: 0;
         padding-left: 0;
       }
 
-      &.bottom {
+      &:nth-child(2) {
         bottom: -8px;
         right: 0;
         padding-right: 0;

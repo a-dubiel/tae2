@@ -29,8 +29,8 @@ export default class About extends React.Component {
         <div className="content-grid__slider u-border-bottom">
           <div className="content-grid__title">
             <h2>
-              <span className="top">About</span>
-              <span className="bottom">me</span>
+              <span>About</span>
+              <span>me</span>
             </h2>
           </div>
           <div className="content-grid__img">

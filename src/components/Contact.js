@@ -6,8 +6,8 @@ const Contact = ({ data }) => (
     <div className="content-grid__item content-grid__item--top">
       <div className="content-grid__title">
         <h2>
-          <span className="top">Contact</span>
-          <span className="bottom">Me</span>
+          <span>Contact</span>
+          <span>Me</span>
         </h2>
       </div>
       <div className="content-grid__img">

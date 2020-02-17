@@ -13,8 +13,8 @@ const What = ({ data }) => (
     <div className="content-grid__item">
       <div className="content-grid__title">
         <h2>
-          <span className="top">What I can</span>
-          <span className="bottom">do for you</span>
+          <span>What I can</span>
+          <span>do for you</span>
         </h2>
       </div>
       <div className="content-grid__img">
