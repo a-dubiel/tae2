@@ -1,6 +1,15 @@
 .bottom {
   background-color: $brand-black;
   padding: $space-md $space;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 300;
 
   @include media-above("lg") {
     padding: $space-md;
@@ -24,7 +33,8 @@
 }
 
 .bottom__nav {
-  margin-top: $space-md;
+  margin-bottom: $nav-height;
+  position: relative;
 
   @include media-above("md") {
     margin-top: $space-xl;

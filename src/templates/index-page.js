@@ -21,16 +21,18 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <TopHeader slider={frontmatter.topslider} />
-      <What data={frontmatter.what} />
-      <Ticker ticker={frontmatter.ticker} />
-      <Things things={frontmatter.things} />
-      <SingleImage image={frontmatter.singleimage} />
-      <About data={frontmatter.about} />
-      <SingleImage image={frontmatter.singleimage2} />
-      <Testimonials testimonials={frontmatter.testimonials} />
-      <Divider />
-      <Contact data={frontmatter.contact} />
+      <div class="content">
+        <TopHeader slider={frontmatter.topslider} />
+        <What data={frontmatter.what} />
+        <Ticker ticker={frontmatter.ticker} />
+        <Things things={frontmatter.things} />
+        <SingleImage image={frontmatter.singleimage} />
+        <About data={frontmatter.about} />
+        <SingleImage image={frontmatter.singleimage2} />
+        <Testimonials testimonials={frontmatter.testimonials} />
+        <Divider />
+        <Contact data={frontmatter.contact} />
+      </div>
       <Bottom data={frontmatter.contact} />
       <Nav />
     </Layout>
