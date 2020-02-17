@@ -40,7 +40,7 @@ $brand-pink: #fc0f9a;
 $brand-green: #00ab69;
 $brand-gray: #eee;
 $brand-white: #fff;
-$brand-black: #000;
+$brand-black: #231f20;
 $brand-brownish: rgb(96, 96, 91);
 $brand-orange: #ff8246;
 $brand-light-gray-blue: #b6b8ba;
@@ -84,7 +84,7 @@ $bg-color: #fff;
 $bg-footer: $bg-color;
 
 // Borders
-$border-color: #000;
+$border-color: $brand-black;
 $hr-color: $brand-white;
 
 // Transitions

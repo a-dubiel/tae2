@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-right: 3px solid #000;
+    border-right: 3px solid $brand-black;
 
     &:last-child {
       border: 0;
@@ -63,7 +63,7 @@
     // align-items: center;
     // justify-content: center;
     flex-direction: column;
-    border-right: 3px solid #000;
+    border-right: 3px solid $brand-black;
 
     &:last-child {
       border: 0;
@@ -159,13 +159,13 @@
   padding: $space;
   height: 150px;
   position: relative;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid $brand-black;
+  border-bottom: 2px solid $brand-black;
 
   @include media-above("md") {
     font-size: 68px;
     height: 250px;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid $brand-black;
   }
 
   @include media-above("lg") {
@@ -227,11 +227,11 @@
 
       background-image: linear-gradient(
         0deg,
-        #000000 7.14%,
+        $brand-black 7.14%,
         #c6c5c5 7.14%,
         #c6c5c5 50%,
-        #000000 50%,
-        #000000 57.14%,
+        $brand-black 50%,
+        $brand-black 57.14%,
         #c6c5c5 57.14%,
         #c6c5c5 100%
       );
@@ -241,11 +241,11 @@
         top: -15px;
         background-image: linear-gradient(
           0deg,
-          #000000 5%,
+          $brand-black 5%,
           #c6c5c5 5%,
           #c6c5c5 50%,
-          #000000 50%,
-          #000000 55%,
+          $brand-black 50%,
+          $brand-black 55%,
           #c6c5c5 55%,
           #c6c5c5 100%
         );
@@ -273,7 +273,7 @@
   text-align: center;
   padding: $space-md;
   font-style: italic;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid $brand-black;
 
   @include media-above("lg") {
     padding: $space-lg;

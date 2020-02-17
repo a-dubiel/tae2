@@ -11,6 +11,7 @@ import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import Divider from "../components/Divider";
 import Contact from "../components/Contact";
+import Bottom from "../components/Bottom";
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -29,6 +30,7 @@ const IndexPage = ({ data }) => {
       <Testimonials testimonials={frontmatter.testimonials} />
       <Divider />
       <Contact data={frontmatter.contact} />
+      <Bottom data={frontmatter.contact} />
     </Layout>
   );
 };

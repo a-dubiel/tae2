@@ -1,7 +1,7 @@
 import React from "react";
 
 const Divider = () => (
-  <div className="divider">
+  <div className="divider u-border-bottom">
     {/*?xml version="1.0" encoding="UTF-8"?*/}
     <svg
       viewBox="0 0 1300 189"
