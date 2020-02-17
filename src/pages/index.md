@@ -12,7 +12,7 @@ topslider:
       text: Slide 3
 what:
   content: >-
-    You hire me because you don’t want to worry about all the final details
+    You hire **me because you don’t wa**nt to worry about all the final details
     coming together for the actual wedding day.
 
 
@@ -20,9 +20,9 @@ what:
     wedding on Etsy and need someone else to execute it seamlessly.
 
 
-    Because you’ve answered all of your future mother-in-law’s questions for the
-    past six months and it’s time for someone else to handle her on your big
-    day.
+    Because you’*ve answered all of your future mother-in-law’s questions for
+    the past six months and it’s time for someone else to handle h*er on your
+    big day.
 
 
     Because you deserve to know that you have help from a professional in case
