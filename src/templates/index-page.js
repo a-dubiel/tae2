@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import What from "../components/What";
 import TopHeader from "../components/TopHeader";
@@ -12,6 +12,7 @@ import Testimonials from "../components/Testimonials";
 import Divider from "../components/Divider";
 import Contact from "../components/Contact";
 import Bottom from "../components/Bottom";
+import Nav from "../components/Nav";
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -31,6 +32,7 @@ const IndexPage = ({ data }) => {
       <Divider />
       <Contact data={frontmatter.contact} />
       <Bottom data={frontmatter.contact} />
+      <Nav />
     </Layout>
   );
 };

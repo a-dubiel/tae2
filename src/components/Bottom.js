@@ -78,10 +78,18 @@ const Bottom = ({ data }) => (
           )}
           {data.instagram && data.facebook && (
             <li>
-              <a target="_blank" href={`${data.instagram}`}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`${data.instagram}`}
+              >
                 Instagram
               </a>
-              <a target="_blank" href={`${data.facebook}`}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`${data.facebook}`}
+              >
                 Facebook
               </a>
             </li>

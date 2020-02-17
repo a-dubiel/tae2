@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Contact = ({ data }) => (
-  <section className="content-grid u-border-bottom">
+  <section id="contact" className="content-grid u-border-bottom">
     <div className="content-grid__item content-grid__item--top">
       <div className="content-grid__title">
         <h2>
@@ -26,6 +26,7 @@ const Contact = ({ data }) => (
           <a
             href={`${data.buttonurl}`}
             target="_blank"
+            rel="noopener noreferrer"
             className="button u-mb4"
           >
             {data.buttonlabel}
@@ -36,6 +37,7 @@ const Contact = ({ data }) => (
           <a
             href={`tel:` + `${data.phone}`}
             target="_blank"
+            rel="noopener noreferrer"
             className="button--contact"
           >
             {data.phone}
@@ -45,6 +47,7 @@ const Contact = ({ data }) => (
           <a
             href={`${data.email}`}
             target="_blank"
+            rel="noopener noreferrer"
             className="button--contact button--underline u-mb3"
           >
             {data.email}
@@ -55,6 +58,7 @@ const Contact = ({ data }) => (
             <a
               href={`${data.instagram}`}
               target="_blank"
+              rel="noopener noreferrer"
               className="button--icon"
             >
               <i>

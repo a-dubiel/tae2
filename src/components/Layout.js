@@ -1,7 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import "slick-carousel/slick/slick.scss";
 import "../components/scss/main.scss";
 import useSiteMetadata from "./SiteMetadata";
@@ -13,7 +11,9 @@ const TemplateWrapper = ({ children }) => {
     <div>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>
+          {title} : {description}
+        </title>
         <meta name="description" content={description} />
 
         <link
@@ -49,9 +49,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      {/* <Navbar /> */}
-      <React.Fragment>{children}</React.Fragment>
-      {/* <Footer /> */}
+      <main className="main">{children}</main>
     </div>
   );
 };

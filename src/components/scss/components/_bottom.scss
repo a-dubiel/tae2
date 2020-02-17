@@ -1,6 +1,10 @@
 .bottom {
   background-color: $brand-black;
-  padding: $space-md;
+  padding: $space-md $space;
+
+  @include media-above("lg") {
+    padding: $space-md;
+  }
 }
 
 .bottom__logo--desktop {

@@ -24,6 +24,7 @@
 //
 // Components
 // --------------------------------------------------
+@import "components/main";
 @import "components/wrapper";
 @import "components/content-grid";
 @import "components/header";
@@ -38,9 +39,7 @@
 @import "components/quote-slider";
 @import "components/divider";
 @import "components/bottom";
-// @import "components/nav";
-// @import "components/logo";
-// @import "components/footer";
+@import "components/nav";
 
 //
 // Building Blocks

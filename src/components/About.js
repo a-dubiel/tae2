@@ -25,7 +25,7 @@ export default class About extends React.Component {
       adaptiveHeight: true
     };
     return (
-      <section className="content-grid u-border-bottom">
+      <section id="about" className="content-grid u-border-bottom">
         <div className="content-grid__slider u-border-bottom">
           <div className="content-grid__title">
             <h2>

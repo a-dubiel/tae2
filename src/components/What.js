@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const What = ({ data }) => (
-  <section className="content-grid content-grid--reverse-mobile u-border-bottom">
+  <section
+    id="services"
+    className="content-grid content-grid--reverse-mobile u-border-bottom"
+  >
     <div className="content-grid__item">
       <div className="content-grid__text">{data.content}</div>
     </div>

@@ -1,0 +1,7 @@
+.main {
+  padding-bottom: $nav-height - 10px;
+
+  @include media-above("xl") {
+    padding-bottom: $nav-height;
+  }
+}
