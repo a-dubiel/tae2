@@ -53,12 +53,20 @@
     @include media-above("md") {
       font-size: 4vw;
     }
+
+    strong {
+      color: red;
+    }
   }
 
   strong {
     text-decoration: underline !important;
     font-style: normal !important;
   }
+}
+
+strong {
+  color: red;
 }
 
 .main-slider__button {

@@ -61,14 +61,20 @@ things:
 singleimage: /img/couple.jpg
 about:
   content: >
-    <p>My name is Alice Chi Martin and I’m a busy working mom with two young
-    kids and a day job that I love. The first time I helped coordinate a wedding
-    was fifteen years ago for my best friend. I have been hooked ever since.</p>
+    My name is Alice Chi Martin and I’m a busy working mom with two young
+    kids and a day job that I love.
+
+
+    The first time I helped coordinate a wedding
+    was fifteen years ago for my best friend. I have been hooked ever since.
+
+
     I LOVE everything about a wedding day - bossing people around, getting to
     know your crazy Aunt Patty and finding solutions for problems that feel like
-    the end of the world on the day of. There’s nothing better than watching a
-    crazy day with upteenth details going off without a hitch - that “wedding
-    high” is addictive and why I keep doing this.
+    the end of the world on the day of.
+
+
+    There’s nothing better than watching a crazy day with upteenth details going off without a hitch - that “wedding high” is addictive and why I keep doing this.
   heading: "And, I'm a huge fan of wedding cake. Huge."
   quote: >-
     Seeing two families come together and the happiness it brings may sound
