@@ -12,7 +12,7 @@ topslider:
       text: Slide 3
 what:
   content: >-
-    You hire **me because you don’t wa**nt to worry about all the final details
+    You hire me because you don’t want to worry about all the final details
     coming together for the actual wedding day.
 
 
@@ -20,8 +20,8 @@ what:
     wedding on Etsy and need someone else to execute it seamlessly.
 
 
-    Because you’*ve answered all of your future mother-in-law’s questions for
-    the past six months and it’s time for someone else to handle h*er on your
+    Because you’ve answered all of your future mother-in-law’s questions for
+    the past six months and it’s time for someone else to handle her on your
     big day.
 
 
@@ -62,10 +62,7 @@ singleimage: /img/couple.jpg
 about:
   content: >
     My name is Alice Chi Martin and I’m a busy working mom with two young
-    kids and a day job that I love.
-
-
-    The first time I helped coordinate a wedding
+    kids and a day job that I love. The first time I helped coordinate a wedding
     was fifteen years ago for my best friend. I have been hooked ever since.
 
 

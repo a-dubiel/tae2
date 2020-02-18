@@ -3,3 +3,21 @@
  * -----------------------------------------------------------------------------
  */
 // @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+
+@font-face {
+  font-family: "athletics";
+  src: url("./fonts/athletics_regular-webfont.woff2") format("woff2"),
+    url("./fonts/athletics_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "athletics";
+  src: url("./fonts/athletics_bold-webfont.woff2") format("woff2"),
+    url("./fonts/athletics_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

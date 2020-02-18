@@ -66,13 +66,15 @@ export default class TopHeader extends React.Component {
                     >
                       Next
                     </button>
-                    <h3 className="main-slider__title">
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: md.render(item.text)
-                        }}
-                      />
-                    </h3>
+                    <div
+                      className="main-slider__title"
+                      dangerouslySetInnerHTML={{
+                        __html: md
+                          .render(item.text)
+                          .replace(/<strong>/g, "<u>")
+                          .replace(/<\/strong>/g, "</u>")
+                      }}
+                    />
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 .main-slider {
-  margin-bottom: -7px;
+  margin-bottom: -5px;
 }
 .main-slider__item {
   display: flex;
@@ -53,20 +53,7 @@
     @include media-above("md") {
       font-size: 4vw;
     }
-
-    strong {
-      color: red;
-    }
   }
-
-  strong {
-    text-decoration: underline !important;
-    font-style: normal !important;
-  }
-}
-
-strong {
-  color: red;
 }
 
 .main-slider__button {
