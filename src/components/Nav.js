@@ -40,6 +40,7 @@ const Nav = class extends React.Component {
       <nav className="nav" role="navigation" aria-label="Main Navigation">
         <div className="nav__content">
           <div
+            role="button"
             className={`nav__burger ${this.state.navBarActiveClass}`}
             onClick={() => this.toggleHamburger()}
           >

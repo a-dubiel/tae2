@@ -35,7 +35,7 @@ const Contact = ({ data }) => (
         <p>{data.contacttext}</p>
         {data.phone && (
           <a
-            href={`tel:` + `${data.phone}`}
+            href={`tel:${data.phone}`}
             target="_blank"
             rel="noopener noreferrer"
             className="button--contact"
@@ -45,7 +45,7 @@ const Contact = ({ data }) => (
         )}
         {data.email && (
           <a
-            href={`${data.email}`}
+            href={`mailto:${data.email}`}
             target="_blank"
             rel="noopener noreferrer"
             className="button--contact button--underline u-mb3"

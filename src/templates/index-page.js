@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="content">
+      <section className="content">
         <TopHeader slider={frontmatter.topslider} />
         <What data={frontmatter.what} />
         <Ticker ticker={frontmatter.ticker} />
@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
         <Testimonials testimonials={frontmatter.testimonials} />
         <Divider />
         <Contact data={frontmatter.contact} />
-      </div>
+      </section>
       <Bottom data={frontmatter.contact} />
       <Nav />
     </Layout>

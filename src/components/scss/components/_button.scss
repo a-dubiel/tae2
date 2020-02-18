@@ -22,7 +22,7 @@ input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: wrap;
   &:focus,
   &:hover {
     background-color: $brand-black;
@@ -103,12 +103,19 @@ input[type="submit"] {
 }
 
 .button--contact {
-  font-size: $text-lg;
   display: block;
   line-height: 1.3;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @include media-above("xs") {
+    font-size: $text-md;
+  }
+
+  @include media-above("md") {
+    font-size: $text-lg;
   }
 }
 

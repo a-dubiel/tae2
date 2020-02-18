@@ -4,8 +4,7 @@ topslider:
   slides:
     - image: /img/what-i-can-do.jpg
       text: >-
-        **Day of Wedding Coordination** for the bride who doesn’t want to lift a
-        finger.
+        **Day of Wedding Coordination** for the bride who doesn’t want to lift a finger.
     - image: /img/what-i-can-do.jpg
       text: Slide 2
     - image: /img/what-i-can-do.jpg

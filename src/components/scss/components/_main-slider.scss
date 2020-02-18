@@ -1,5 +1,5 @@
 .main-slider {
-  margin-bottom: -5px;
+  margin-bottom: -6px;
 }
 .main-slider__item {
   display: flex;
@@ -47,8 +47,12 @@
 .main-slider__title {
   span,
   p {
-    font-size: $text-lg;
+    font-size: $text-md;
     line-height: 1.05;
+
+    @include media-above("xs") {
+      font-size: $text-lg;
+    }
 
     @include media-above("md") {
       font-size: 4vw;
