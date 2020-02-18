@@ -21,11 +21,13 @@
 
   @include media-above("md") {
     display: block;
+    flex-shrink: 0;
   }
 }
 
 .bottom__logo--mobile {
   display: block;
+  flex-shrink: 0;
 
   @include media-above("md") {
     display: none;
