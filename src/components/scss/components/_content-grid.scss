@@ -142,6 +142,17 @@
   }
 }
 
+.content-grid__text--quotes {
+  height: 100%;
+
+  @include media-above("lg") {
+    .quote-slider {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
 .content-grid__img {
   position: relative;
   flex: 1;

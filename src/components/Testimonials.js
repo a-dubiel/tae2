@@ -21,18 +21,17 @@ export default class Testimonials extends React.Component {
     const settings = {
       arrows: false,
       speed: 1000,
-      autoplaySpeed: 8000,
-      autoplay: true,
+      autoplay: false,
       slidesToShow: 1
     };
+    console.log(this.sliderOne);
     const settingsTwo = {
       arrows: false,
       speed: 1000,
-      autoplaySpeed: 8000,
-      autoplay: true,
+      autoplay: false,
       slidesToShow: 1,
-      asNavFor: this.sliderOne
-      // fade: true
+      // fade: true,
+      adaptiveHeight: true
     };
     return (
       <section id="testimonials" className="content-grid u-border-bottom">
@@ -83,7 +82,7 @@ export default class Testimonials extends React.Component {
               <span>Words</span>
             </h2>
           </div>
-          <div className="content-grid__text">
+          <div className="content-grid__text content-grid__text--quotes">
             <div className="quote-slider">
               <Slider
                 ref={slider => (this.sliderTwo = slider)}
