@@ -132,7 +132,7 @@ input[type="submit"] {
   align-items: center;
   position: relative;
 
-  @include media-below("sm") {
+  @include media-below("md") {
     font-size: $text-md;
   }
 
@@ -160,7 +160,7 @@ input[type="submit"] {
       transform: translate(-50%, -50%);
     }
 
-    @include media-below("sm") {
+    @include media-below("md") {
       width: 40px;
       height: 40px;
       bottom: -10px;
@@ -197,11 +197,5 @@ input[type="submit"] {
   }
   60% {
     transform: translateX(5px);
-  }
-}
-
-.button--sm {
-  @include media-below("sm") {
-    font-size: $text-sm;
   }
 }

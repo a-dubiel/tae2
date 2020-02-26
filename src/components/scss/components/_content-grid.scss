@@ -140,6 +140,39 @@
       }
     }
   }
+
+  ul.is-visible {
+    li:nth-child(1) {
+      .icon--circle {
+        background-color: $brand-yellow;
+        transition-delay: 0.2s;
+      }
+    }
+    li:nth-child(2) {
+      .icon--circle {
+        background-color: $brand-yellow;
+        transition-delay: 0.4s;
+      }
+    }
+    li:nth-child(3) {
+      .icon--circle {
+        background-color: $brand-yellow;
+        transition-delay: 0.6s;
+      }
+    }
+    li:nth-child(4) {
+      .icon--circle {
+        background-color: $brand-yellow;
+        transition-delay: 0.8s;
+      }
+    }
+    li:nth-child(5) {
+      .icon--circle {
+        background-color: $brand-yellow;
+        transition-delay: 1s;
+      }
+    }
+  }
 }
 
 .content-grid__text--quotes {

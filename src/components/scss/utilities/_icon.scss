@@ -8,10 +8,6 @@
   height: 32px;
   border: 2px solid $border-color;
   transition: background-color 0.3s;
-
-  &.is-visible {
-    background-color: $brand-yellow;
-  }
 }
 
 .icon--times {

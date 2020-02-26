@@ -66,13 +66,13 @@ export default class TopHeader extends React.Component {
                           backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
                         }}
                       /> */}
-                      {/* <img
+                      <img
                         sizes={`${item.image.childImageSharp.fluid.sizes}`}
                         src={`${item.image.childImageSharp.fluid.src}`}
                         srcSet={`${item.image.childImageSharp.fluid.srcSet}`}
                         alt={"couple"}
                         className=""
-                      /> */}
+                      />
                     </div>
                   </div>
                 ))}

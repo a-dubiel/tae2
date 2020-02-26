@@ -12,12 +12,10 @@ const Things = ({ things }) => {
       <div className="content-grid__item content-grid__item--top content-grid__item--bg-peach">
         <div className="content-grid__text">
           <h3>{things.dotitle}</h3>
-          <ul>
+          <ul className={`${inView ? "is-visible" : ""}`}>
             {things.do.map(item => (
               <li ref={ref} key={item.text}>
-                <i
-                  className={`icon icon--circle ${inView ? "is-visible" : ""}`}
-                />
+                <i className={`icon icon--circle`} />
                 {item.text}
               </li>
             ))}
