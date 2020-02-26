@@ -16,9 +16,7 @@ import Nav from "../components/Nav";
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
-  console.log(frontmatter);
-
+  // console.log(frontmatter);
   return (
     <Layout>
       <section className="content">

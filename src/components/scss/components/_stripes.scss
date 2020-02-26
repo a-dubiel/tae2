@@ -8,7 +8,6 @@
     height: 250px;
     position: relative;
     z-index: 200;
-    margin-top: -10px;
     border-top: 3px solid $border-color;
   }
 }
@@ -18,7 +17,15 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: -600%;
+  left: -300%;
+
+  &:nth-child(2) {
+    left: -1400%;
+  }
+
+  &:nth-child(3) {
+    left: -2100%;
+  }
 
   background-image: linear-gradient(
     45deg,

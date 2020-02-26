@@ -36,7 +36,7 @@
 
 .bottom__nav {
   margin-bottom: $space-md;
-  margin-top: $space;
+  margin-top: $space-md;
   position: relative;
 
   @include media-above("md") {

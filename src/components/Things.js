@@ -1,36 +1,45 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useInView } from "react-intersection-observer";
 
-const Things = ({ things }) => (
-  <section className="content-grid u-border-bottom">
-    <div className="content-grid__item content-grid__item--bg-peach">
-      <div className="content-grid__text">
-        <h3>{things.dotitle}</h3>
-        <ul>
-          {things.do.map(item => (
-            <li key={item.text}>
-              <i className="icon icon--circle" />
-              {item.text}
-            </li>
-          ))}
-        </ul>
+const Things = ({ things }) => {
+  const [ref, inView, entry] = useInView({
+    threshold: 0,
+    triggerOnce: true
+  });
+  return (
+    <section className={`content-grid u-border-bottom`}>
+      <div className="content-grid__item content-grid__item--top content-grid__item--bg-peach">
+        <div className="content-grid__text">
+          <h3>{things.dotitle}</h3>
+          <ul>
+            {things.do.map(item => (
+              <li ref={ref} key={item.text}>
+                <i
+                  className={`icon icon--circle ${inView ? "is-visible" : ""}`}
+                />
+                {item.text}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-    <div className="content-grid__item content-grid__item--bg-dark-gray">
-      <div className="content-grid__text">
-        <h3>{things.donttitle}</h3>
-        <ul>
-          {things.dont.map(item => (
-            <li key={item.text}>
-              <i className="icon icon--times" />
-              {item.text}
-            </li>
-          ))}
-        </ul>
+      <div className="content-grid__item content-grid__item--top content-grid__item--bg-dark-gray">
+        <div className="content-grid__text">
+          <h3>{things.donttitle}</h3>
+          <ul>
+            {things.dont.map(item => (
+              <li key={item.text}>
+                <i className="icon icon--times" />
+                {item.text}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 Things.propTypes = {
   things: PropTypes.object

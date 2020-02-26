@@ -164,6 +164,12 @@
   }
 }
 
+.content-grid__img--jlo {
+  @include media-below("lg") {
+    border-bottom: 2px solid $border-color;
+  }
+}
+
 .content-grid__title {
   background-color: $brand-dark-gray;
   width: 100%;

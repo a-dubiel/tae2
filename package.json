@@ -29,6 +29,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "react-intersection-observer": "^8.26.0",
     "react-slick": "^0.25.2",
     "remarkable": "^2.0.0",
     "slick-carousel": "^1.8.1",

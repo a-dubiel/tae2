@@ -6,7 +6,10 @@ const Ticker = ({ ticker }) => (
     <div className="ticker__wrap">
       <div className="ticker__content">
         <p className="ticker__title">
-          {ticker} {ticker} {ticker}
+          {ticker} {ticker} {ticker} {ticker} {ticker} {ticker} {ticker}{" "}
+          {ticker} {ticker} {ticker} {ticker} {ticker} {ticker} {ticker}{" "}
+          {ticker} {ticker} {ticker} {ticker} {ticker} {ticker} {ticker}{" "}
+          {ticker} {ticker} {ticker} {ticker} {ticker} {ticker} {ticker}{" "}
         </p>
       </div>
     </div>

@@ -24,14 +24,13 @@ export default class Testimonials extends React.Component {
       autoplay: false,
       slidesToShow: 1
     };
-    console.log(this.sliderOne);
+
     const settingsTwo = {
       arrows: false,
       speed: 1000,
       autoplay: false,
       slidesToShow: 1,
-      // fade: true,
-      adaptiveHeight: true
+      fade: true
     };
     return (
       <section id="testimonials" className="content-grid u-border-bottom">

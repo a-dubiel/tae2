@@ -10,7 +10,7 @@ const Contact = ({ data }) => (
           <span>Me</span>
         </h2>
       </div>
-      <div className="content-grid__img">
+      <div className="content-grid__img content-grid__img--jlo">
         <img
           sizes={`${data.image.childImageSharp.fluid.sizes}`}
           src={`${data.image.childImageSharp.fluid.src}`}
@@ -27,7 +27,7 @@ const Contact = ({ data }) => (
             href={`${data.buttonurl}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="button u-mb4"
+            className="button u-mb4 button--sm"
           >
             {data.buttonlabel}
           </a>

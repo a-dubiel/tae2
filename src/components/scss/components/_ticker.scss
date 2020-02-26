@@ -6,7 +6,7 @@
 .ticker__wrap {
   width: 100%;
   overflow: hidden;
-  padding-left: 100%;
+  padding-left: 25%;
   box-sizing: content-box;
   height: $text-md-bump;
 
@@ -20,7 +20,7 @@
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
-  animation: ticker 60s infinite linear;
+  animation: ticker 220s infinite linear;
   height: $text-md-bump;
 
   @include media-above("md") {
