@@ -88,31 +88,32 @@ export default class TopHeader extends React.Component {
                 </button>
                 <h1>Day of Wedding Coordination for</h1>
               </div>
-
-              <Slider
-                ref={slider => (this.sliderTwo = slider)}
-                {...settingsTwo}
-              >
-                {slider.slides.map(item => (
-                  <div key={item.text} className="main-slider__slide">
-                    <div className="main-slider__item">
-                      <div className="main-slider__content">
-                        <div className="main-slider__text">
-                          <div
-                            className="main-slider__title"
-                            dangerouslySetInnerHTML={{
-                              __html: md
-                                .render(item.text)
-                                .replace(/<strong>/g, "<u>")
-                                .replace(/<\/strong>/g, "</u>")
-                            }}
-                          />
+              <div className="main-slider__add-bottom">
+                <Slider
+                  ref={slider => (this.sliderTwo = slider)}
+                  {...settingsTwo}
+                >
+                  {slider.slides.map(item => (
+                    <div key={item.text} className="main-slider__slide">
+                      <div className="main-slider__item">
+                        <div className="main-slider__content">
+                          <div className="main-slider__text">
+                            <div
+                              className="main-slider__title"
+                              dangerouslySetInnerHTML={{
+                                __html: md
+                                  .render(item.text)
+                                  .replace(/<strong>/g, "<u>")
+                                  .replace(/<\/strong>/g, "</u>")
+                              }}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slider>
+                  ))}
+                </Slider>
+              </div>
             </div>
           </div>
         </header>
