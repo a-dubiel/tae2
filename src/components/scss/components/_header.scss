@@ -5,10 +5,10 @@
 
 .header__logo {
   background-color: $brand-light-blue;
-  padding: $space-sm 0;
+  padding: $space-sm $space;
 
   @include media-above("md") {
-    padding: $space 0;
+    padding: $space $space-md;
   }
 
   svg {
