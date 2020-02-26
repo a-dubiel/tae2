@@ -11,7 +11,7 @@
   flex-direction: column;
 
   @include media-above("lg") {
-    min-height: 800px;
+    min-height: 700px;
   }
 
   @include media-above("xl") {
@@ -29,6 +29,7 @@
 
   svg {
     display: block;
+    max-height: 180px;
   }
 }
 

@@ -47,7 +47,8 @@
   position: relative;
 
   img {
-    object-fit: fill;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -68,14 +69,14 @@
 
 .main-slider__content {
   display: flex;
-  padding: 0 $space $space;
+  padding: 0 $space;
   width: 100%;
   min-height: 100%;
   background-color: $brand-gray;
   flex-direction: column-reverse;
 
   @include media-above("lg") {
-    padding: 0 $space-md $space-md;
+    padding: 0 $space-md $space;
   }
 }
 
