@@ -9,7 +9,8 @@ export default class TopHeader extends React.Component {
     this.nextSlide = this.nextSlide.bind(this);
   }
   nextSlide() {
-    this.slider.slickNext();
+    this.sliderOne.slickNext();
+    this.sliderTwo.slickNext();
   }
   render() {
     const { slider } = this.props;
@@ -19,8 +20,15 @@ export default class TopHeader extends React.Component {
       speed: 1000,
       autoplaySpeed: 8000,
       autoplay: true,
+      slidesToShow: 1
+    };
+    const settingsTwo = {
+      arrows: false,
+      speed: 1000,
+      autoplaySpeed: 8000,
+      autoplay: true,
       slidesToShow: 1,
-      adaptiveHeight: true
+      fade: true
     };
     return (
       <header className="header">
@@ -44,45 +52,61 @@ export default class TopHeader extends React.Component {
             </svg>
           </div>
         </div>
-        <Slider
-          ref={slider => (this.slider = slider)}
-          className="main-slider"
-          {...settings}
-        >
-          {slider.slides.map(item => (
-            <div key={item.text} className="main-slider__slide">
-              <div className="main-slider__item u-border-bottom">
-                <div
-                  className="main-slider__photo"
-                  style={{
-                    backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
-                  }}
-                />
-                <div className="main-slider__content">
-                  <div className="main-slider__text">
-                    <button
-                      onClick={this.nextSlide}
-                      className="main-slider__button button--next"
-                    >
-                      Next
-                    </button>
+        <div className="header__sliders">
+          <div className="main-slider--one">
+            <Slider ref={slider => (this.sliderOne = slider)} {...settings}>
+              {slider.slides.map(item => (
+                <div key={item.text} className="main-slider__slide">
+                  <div className="main-slider__item">
                     <div
-                      className="main-slider__title"
-                      dangerouslySetInnerHTML={{
-                        __html: md
-                          .render(item.text)
-                          .replace(/<strong>/g, "<u>")
-                          .replace(/<\/strong>/g, "</u>")
+                      className="main-slider__photo"
+                      style={{
+                        backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
                       }}
                     />
                   </div>
                 </div>
-              </div>
+              ))}
+            </Slider>
+          </div>
+          <div className="main-slider--two">
+            <div class="main-slider__static">
+              <button
+                onClick={this.nextSlide}
+                className="main-slider__button button--next"
+              >
+                Next
+              </button>
+              <h1>Day of Wedding Coordination for</h1>
             </div>
-          ))}
-        </Slider>
 
-        <div className="stripes u-border-bottom" />
+            <Slider ref={slider => (this.sliderTwo = slider)} {...settingsTwo}>
+              {slider.slides.map(item => (
+                <div key={item.text} className="main-slider__slide">
+                  <div className="main-slider__item u-border-bottom">
+                    <div className="main-slider__content">
+                      <div className="main-slider__text">
+                        <div
+                          className="main-slider__title"
+                          dangerouslySetInnerHTML={{
+                            __html: md
+                              .render(item.text)
+                              .replace(/<strong>/g, "<u>")
+                              .replace(/<\/strong>/g, "</u>")
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+
+        <div className="stripes u-border-bottom">
+          <div class="stripes__content" />
+        </div>
       </header>
     );
   }

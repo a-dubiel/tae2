@@ -15,3 +15,14 @@
     display: block;
   }
 }
+
+.header__sliders {
+  display: flex;
+  flex-direction: column;
+
+  @include media-above("md") {
+    flex-direction: row;
+    position: relative;
+    z-index: 100;
+  }
+}

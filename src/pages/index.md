@@ -3,12 +3,11 @@ templateKey: index-page
 topslider:
   slides:
     - image: /img/what-i-can-do.jpg
-      text: >-
-        **Day of Wedding Coordination** for the bride who doesn’t want to lift a finger.
+      text: the bride who doesn’t want to lift a finger.
     - image: /img/what-i-can-do.jpg
-      text: Slide 2
+      text: the groom who doesn't love surprises.
     - image: /img/what-i-can-do.jpg
-      text: Slide 3
+      text: the couple who wants everyone to be happy.
 what:
   content: >-
     You hire me because you don’t want to worry about all the final details
