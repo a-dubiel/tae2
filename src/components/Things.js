@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
 
 const Things = ({ things }) => {
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: true
   });

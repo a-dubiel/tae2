@@ -97,6 +97,10 @@
     font-size: $text-md;
     margin-bottom: $space;
 
+    @include media-above("lg") {
+      font-size: $text-md-bump;
+    }
+
     @include media-above("xl") {
       margin-bottom: $space-md;
     }

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
 import { Remarkable } from "remarkable";
+import Stripes from "./Stripes";
 
 export default class TopHeader extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ export default class TopHeader extends React.Component {
     const settings = {
       arrows: false,
       speed: 1000,
-      autoplaySpeed: 8000,
+      autoplaySpeed: 5000,
       autoplay: true,
       slidesToShow: 1,
       className: "slider-chuj"
@@ -26,7 +27,7 @@ export default class TopHeader extends React.Component {
     const settingsTwo = {
       arrows: false,
       speed: 1000,
-      autoplaySpeed: 8000,
+      autoplaySpeed: 5000,
       autoplay: true,
       slidesToShow: 1,
       fade: true
@@ -55,73 +56,60 @@ export default class TopHeader extends React.Component {
             </div>
           </div>
           <div className="header__sliders">
-            <div className="main-slider--one" id="slider-top">
-              <Slider ref={slider => (this.sliderOne = slider)} {...settings}>
-                {slider.slides.map(item => (
-                  <div key={item.text} className="main-slider__slide--top">
-                    <div className="main-slider__item">
-                      {/* <div
+            <div className="header__row">
+              <div className="main-slider--one">
+                <Slider ref={slider => (this.sliderOne = slider)} {...settings}>
+                  {slider.slides.map(item => (
+                    <div key={item.text} className="main-slider__slide--top">
+                      <div
                         className="main-slider__photo"
                         style={{
                           backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
                         }}
-                      /> */}
-                      <img
-                        sizes={`${item.image.childImageSharp.fluid.sizes}`}
-                        src={`${item.image.childImageSharp.fluid.src}`}
-                        srcSet={`${item.image.childImageSharp.fluid.srcSet}`}
-                        alt={"couple"}
-                        className=""
                       />
-                    </div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-            <div className="main-slider--two">
-              <div className="main-slider__static">
-                <button
-                  onClick={this.nextSlide}
-                  className="main-slider__button button--next"
-                >
-                  Next
-                </button>
-                <h1>Day of Wedding Coordination for</h1>
-              </div>
-              <div className="main-slider__add-bottom">
-                <Slider
-                  ref={slider => (this.sliderTwo = slider)}
-                  {...settingsTwo}
-                >
-                  {slider.slides.map(item => (
-                    <div key={item.text} className="main-slider__slide">
-                      <div className="main-slider__item">
-                        <div className="main-slider__content">
-                          <div className="main-slider__text">
-                            <div
-                              className="main-slider__title"
-                              dangerouslySetInnerHTML={{
-                                __html: md
-                                  .render(item.text)
-                                  .replace(/<strong>/g, "<u>")
-                                  .replace(/<\/strong>/g, "</u>")
-                              }}
-                            />
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   ))}
                 </Slider>
               </div>
+              <div className="main-slider--two">
+                <div className="main-slider__static">
+                  <button
+                    onClick={this.nextSlide}
+                    className="main-slider__button button--next"
+                  >
+                    Next
+                  </button>
+                  <h1>Day of Wedding Coordination for</h1>
+
+                  <Slider
+                    ref={slider => (this.sliderTwo = slider)}
+                    {...settingsTwo}
+                  >
+                    {slider.slides.map(item => (
+                      <div key={item.text} className="main-slider__slide">
+                        <div className="main-slider__item">
+                          <div className="main-slider__content">
+                            <div className="main-slider__text">
+                              <div
+                                className="main-slider__title"
+                                dangerouslySetInnerHTML={{
+                                  __html: md
+                                    .render(item.text)
+                                    .replace(/<strong>/g, "<u>")
+                                    .replace(/<\/strong>/g, "</u>")
+                                }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </Slider>
+                </div>
+              </div>
             </div>
           </div>
         </header>
-        <div className="stripes u-border-bottom">
-          <div className="stripes__content" />
-          <div className="stripes__content" />
-          <div className="stripes__content" />
-        </div>
       </React.Fragment>
     );
   }

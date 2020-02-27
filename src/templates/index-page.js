@@ -9,7 +9,7 @@ import Things from "../components/Things";
 import Ticker from "../components/Ticker";
 import About from "../components/About";
 import Testimonials from "../components/Testimonials";
-import Divider from "../components/Divider";
+import Stripes from "../components/Stripes";
 import Contact from "../components/Contact";
 import Bottom from "../components/Bottom";
 import Nav from "../components/Nav";
@@ -21,6 +21,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <section className="content">
         <TopHeader slider={frontmatter.topslider} />
+        <Stripes color="default" />
         <What data={frontmatter.what} />
         <Ticker ticker={frontmatter.ticker} />
         <Things things={frontmatter.things} />
@@ -28,7 +29,7 @@ const IndexPage = ({ data }) => {
         <About data={frontmatter.about} />
         <SingleImage image={frontmatter.singleimage2} />
         <Testimonials testimonials={frontmatter.testimonials} />
-        <Divider />
+        <Stripes color="white" />
         <Contact data={frontmatter.contact} />
       </section>
       <Bottom data={frontmatter.contact} />

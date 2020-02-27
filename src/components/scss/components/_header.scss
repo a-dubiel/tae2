@@ -5,14 +5,11 @@
 
 .header {
   height: calc(100vh - 70px);
-
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  @include media-above("lg") {
-    min-height: 700px;
-  }
+  position: relative;
+  overflow: hidden;
 
   @include media-above("xl") {
     height: calc(100vh - 80px);
@@ -34,13 +31,16 @@
 }
 
 .header__sliders {
-  display: flex;
   flex: 1;
+}
+
+.header__row {
+  display: flex;
   flex-direction: column;
+  height: 100%;
 
   @include media-above("lg") {
     flex-direction: row;
-    position: relative;
-    z-index: 100;
+    align-items: stretch;
   }
 }

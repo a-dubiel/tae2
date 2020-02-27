@@ -20,7 +20,7 @@
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
-  animation: ticker 220s infinite linear;
+  animation: ticker 360s infinite linear;
   height: $text-md-bump;
 
   @include media-above("md") {

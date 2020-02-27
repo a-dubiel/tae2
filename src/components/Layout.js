@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "slick-carousel/slick/slick.scss";
-import "../components/scss/main.scss";
+import "../components/scss/style.global.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 

@@ -33,7 +33,7 @@ export default class Testimonials extends React.Component {
       fade: true
     };
     return (
-      <section id="testimonials" className="content-grid u-border-bottom">
+      <section id="testimonials" className="content-grid">
         <div className="content-grid__item">
           <div className="content-grid__title u-show-mobile">
             <h2>
