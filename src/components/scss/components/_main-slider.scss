@@ -9,8 +9,6 @@
 
 .main-slider--two {
   background-color: $brand-gray;
-  margin-top: -8px;
-  border-top: 2px solid $border-color;
 
   @include media-above("lg") {
     border-left: 3px solid $border-color;
@@ -18,6 +16,11 @@
     height: 100%;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  @include media-below("lg") {
+    margin-top: -8px;
+    border-top: 2px solid $border-color;
   }
 }
 
