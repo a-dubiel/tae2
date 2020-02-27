@@ -40,7 +40,7 @@
   position: relative;
 
   @include media-above("md") {
-    margin-top: $space-xl;
+    margin-top: 90px;
   }
 
   ul {
