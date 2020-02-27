@@ -21,8 +21,7 @@ export default class TopHeader extends React.Component {
       speed: 1000,
       autoplaySpeed: 5000,
       autoplay: true,
-      slidesToShow: 1,
-      className: "slider-chuj"
+      slidesToShow: 1
     };
     const settingsTwo = {
       arrows: false,

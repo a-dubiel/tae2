@@ -36,11 +36,11 @@
 
 .bottom__nav {
   margin-bottom: $nav-height;
+  margin-top: $space;
   position: relative;
 
   @include media-above("md") {
     margin-top: $space-xl;
-    margin-bottom: $nav-height;
   }
 
   ul {
