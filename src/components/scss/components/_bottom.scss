@@ -21,7 +21,6 @@
 
   @include media-above("md") {
     display: block;
-    flex-shrink: 0;
     max-height: 600px;
   }
 }
