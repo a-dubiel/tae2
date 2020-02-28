@@ -202,9 +202,7 @@
 }
 
 .content-grid__img--jlo {
-  @include media-below("lg") {
-    border-bottom: 2px solid $border-color;
-  }
+  border-bottom: 3px solid $border-color;
 }
 
 .content-grid__title {
@@ -213,13 +211,11 @@
   padding: $space;
   height: 150px;
   position: relative;
-  border-top: 2px solid $brand-black;
-  border-bottom: 2px solid $brand-black;
+  border-bottom: 3px solid $brand-black;
 
   @include media-above("md") {
     font-size: 68px;
     height: 250px;
-    border-bottom: 3px solid $brand-black;
   }
 
   @include media-above("lg") {

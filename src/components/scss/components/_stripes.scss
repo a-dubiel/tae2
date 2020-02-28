@@ -1,7 +1,7 @@
 .stripes {
   height: 100px;
   width: 100%;
-  border-top: 2px solid $border-color;
+  border-top: 3px solid $border-color;
   position: relative;
 
   @include media-above("md") {
