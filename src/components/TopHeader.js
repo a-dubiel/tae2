@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
 import { Remarkable } from "remarkable";
-import Stripes from "./Stripes";
 
 export default class TopHeader extends React.Component {
   constructor(props) {
