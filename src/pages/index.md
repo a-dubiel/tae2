@@ -18,9 +18,9 @@ what:
     wedding on Etsy and need someone else to execute it seamlessly.
 
 
-    Because you’ve answered all of your future mother-in-law’s questions for
-    the past six months and it’s time for someone else to handle her on your
-    big day.
+    Because you’ve answered all of your future mother-in-law’s questions for the
+    past six months and it’s time for someone else to handle her on your big
+    day.
 
 
     Because you deserve to know that you have help from a professional in case
@@ -33,13 +33,13 @@ things:
         Confirm the number of alternative milk drink choices with your bartender
         a week before
     - text: >-
-        Double Check that the DJ knows not to play the Macrena no matter how
+        Double check that the DJ knows not to play the Macarena no matter how
         many times your uncle requests it
     - text: >-
         Find an extra chair to squeeze into that last table because your cousin
         decided to bring her new boyfriend at the last minute
     - text: >-
-        Get your groomsmans pants delivered to the venue asap because he brought
+        Get your groom's pants delivered to the venue asap because he brought
         the wrong ones
     - text: Run the wedding schedule like a military officer
   dont:
@@ -54,14 +54,14 @@ things:
         Participate in any sort of DIY, Etsy-inspired art project for
         centerpiece (trust me, you’ll thank me for this in the long run)
     - text: Create bonsai-inspired floral arrangements the night before
-  donttitle: Things I dont do
+  donttitle: Things I don't do
   dotitle: Things I happily do
 singleimage: /img/couple.jpg
 about:
   content: >
-    My name is Alice Chi Martin and I’m a busy working mom with two young
-    kids and a day job that I love. The first time I helped coordinate a wedding
-    was fifteen years ago for my best friend. I have been hooked ever since.
+    My name is Alice Chi Martin and I’m a busy working mom with two young kids
+    and a day job that I love. The first time I helped coordinate a wedding was
+    fifteen years ago for my best friend. I have been hooked ever since.
 
 
     I LOVE everything about a wedding day - bossing people around, getting to
@@ -69,8 +69,10 @@ about:
     the end of the world on the day of.
 
 
-    There’s nothing better than watching a crazy day with upteenth details going off without a hitch - that “wedding high” is addictive and why I keep doing this.
-  heading: "And, I'm a huge fan of wedding cake. Huge."
+    There’s nothing better than watching a crazy day with upteenth details going
+    off without a hitch - that “wedding high” is addictive and why I keep doing
+    this.
+  heading: 'And, I''m a huge fan of wedding cake. Huge.'
   quote: >-
     Seeing two families come together and the happiness it brings may sound
     cheesy to some people, but I’m the biggest fan of a rom-com come to life.
@@ -98,13 +100,14 @@ testimonials:
         Quote 3
 contact:
   buttonlabel: Click to fill out the form
-  buttonurl: "http://www.example.com"
-  contacttext: "If you have specific questions and would like to\Pchat please call me or email, thank you!"
-  email: alice@type-a-events.com
-  facebook: "https://facebook.com"
+  buttonurl: 'http://www.example.com'
+  contacttext: "If you have specific questions and would like to \Pchat please call or email me, thank you!"
+  email: alice@type_a_events.com
+  facebook: 'https://facebook.com'
   image: /img/jlo.jpg
-  instagram: "https://instagram.com"
-  introtext: "I would love to hear all about your future big\Pday and how I fit into the puzzle. Please fill out\Pthis tidy little form, so I can get as much\P information about your needs as possible.\n"
+  instagram: 'https://instagram.com'
+  introtext: "I would love to hear all about your future big\P day and how I fit into the puzzle. Please fill out \Pthis tidy little form, so I can get as much\P information about your needs as possible."
   phone: +1 206-240-6518
-  pressemail: info@type-a-events.com
+  pressemail: info@type_a_events.com
 ---
+
