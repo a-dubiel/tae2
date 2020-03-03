@@ -25,7 +25,7 @@ what:
 
     Because you deserve to know that you have help from a professional in case
     anything major comes up out of the blue.
-  image: /img/what-i-can-do.jpg
+  image: /img/nathan-dumlao-H_cZqryUuok-unsplash.jpg
 ticker: Your personal J. Lo with a little MacGyver thrown in.
 things:
   do:
