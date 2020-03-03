@@ -80,7 +80,7 @@ about:
     - image: /img/profile.jpg
     - image: /img/what-i-can-do.jpg
     - image: /img/what-i-can-do.jpg
-singleimage2: /img/table.jpg
+singleimage2: /img/pagel0062.jpg
 testimonials:
   slider:
     - author: Oprah & Stedman
