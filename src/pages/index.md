@@ -6,7 +6,7 @@ topslider:
       text: the bride who doesn’t want to lift a finger.
     - image: /img/what-i-can-do.jpg
       text: the groom who doesn't love surprises.
-    - image: /img/what-i-can-do.jpg
+    - image: /img/pagel0783.jpg
       text: the couple who wants everyone to be happy.
 what:
   content: >-
