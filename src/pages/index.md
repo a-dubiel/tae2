@@ -3,11 +3,11 @@ templateKey: index-page
 topslider:
   slides:
     - image: /img/Happybride.png
-      text: the bride who doesn’t want to lift a finger.
+      text: the bride who deserves an amazing day.
     - image: /img/what-i-can-do.jpg
-      text: the groom who doesn't love surprises.
-    - image: /img/pagel0783.jpg
-      text: the couple who wants everyone to be happy.
+      text: the groom who's ready to dance the night away.
+    - image: /img/the_parks_2019-788_websize.jpg
+      text: the couple who wants to celebrate with everyone.
 what:
   content: >-
     You hire me because you don’t want to worry about all the final details
