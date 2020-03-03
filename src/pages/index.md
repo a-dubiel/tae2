@@ -2,7 +2,7 @@
 templateKey: index-page
 topslider:
   slides:
-    - image: /img/what-i-can-do.jpg
+    - image: /img/pagel0174.jpg
       text: the bride who doesn’t want to lift a finger.
     - image: /img/what-i-can-do.jpg
       text: the groom who doesn't love surprises.
