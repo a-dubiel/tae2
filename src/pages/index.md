@@ -25,7 +25,7 @@ what:
 
     Because you deserve to know that you have help from a professional in case
     anything major comes up out of the blue.
-  image: /img/nathan-dumlao-H_cZqryUuok-unsplash.jpg
+  image: /img/the_parks_2019-501_websize.jpg
 ticker: Your personal J. Lo with a little MacGyver thrown in.
 things:
   do:
@@ -84,18 +84,18 @@ singleimage2: /img/pagel0062.jpg
 testimonials:
   slider:
     - author: Oprah & Stedman
-      image: /img/what-i-can-do.jpg
+      image: /img/Testimonial-1.jpg
       quote: >
         My husband and I left our wedding day with the notion that everything
         went perfectly. The more I spoke with family & friends, the more that
         this notion was confirmed. Many guests + friends raved of Alice and her
         get-sh!t done attitude.
     - author: Name
-      image: /img/what-i-can-do.jpg
+      image: /img/carly-rae-hobbins-zNHOIzjJiyA-unsplash.jpg
       quote: |
         Quote 2
     - author: Name
-      image: /img/what-i-can-do.jpg
+      image: /img/Testimonial-2.jpg
       quote: |
         Quote 3
 contact:
