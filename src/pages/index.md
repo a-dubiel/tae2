@@ -2,11 +2,11 @@
 templateKey: index-page
 topslider:
   slides:
-    - image: /img/Happybride.png
+    - image: /img/TAE_square-1.jpg
       text: the bride who deserves an amazing day.
-    - image: /img/what-i-can-do.jpg
+    - image: /img/TAE_square-3.jpg
       text: the groom who's ready to dance the night away.
-    - image: /img/the_parks_2019-788_websize.jpg
+    - image: /img/TAE_square-4.jpg
       text: the couple who wants to celebrate with everyone.
 what:
   content: >-
@@ -25,7 +25,7 @@ what:
 
     Because you deserve to know that you have help from a professional in case
     anything major comes up out of the blue.
-  image: /img/the_parks_2019-501_websize.jpg
+  image: /img/TAE_5x7Rectangle-1.jpg
 ticker: Your personal J. Lo with a little MacGyver thrown in.
 things:
   do:
@@ -56,7 +56,7 @@ things:
     - text: Create bonsai-inspired floral arrangements the night before
   donttitle: Things I don't do
   dotitle: Things I happily do
-singleimage: /img/couple.jpg
+singleimage: /img/TAE_fullwidthstrip-2.jpg
 about:
   content: >
     My name is Alice Chi Martin and I’m a busy working mom with two young kids
@@ -80,7 +80,7 @@ about:
     - image: /img/profile.jpg
     - image: /img/what-i-can-do.jpg
     - image: /img/what-i-can-do.jpg
-singleimage2: /img/pagel0062.jpg
+singleimage2: /img/TAE-fullwidthstrip-1.jpg
 testimonials:
   slider:
     - author: Oprah & Stedman
