@@ -83,21 +83,23 @@ about:
 singleimage2: /img/TAE_fullwidthstrip-1.jpg
 testimonials:
   slider:
-    - author: Oprah & Stedman
+    - author: Christina & Nick Pagel
       image: /img/TAE_5x7Rectangle-4.jpg
-      quote: >
-        My husband and I left our wedding day with the notion that everything
-        went perfectly. The more I spoke with family & friends, the more that
-        this notion was confirmed. Many guests + friends raved of Alice and her
-        get-sh!t done attitude.
+      quote: >-
+        Once our wedding day arrived, Alice was already 10 steps ahead of
+        everyone else including us! She had the run of show memorized, the
+        set-up flow planned out perfectly plus she’d introduced herself to all
+        our vendors and key friends/family without us having to do a thing!
     - author: Name
       image: /img/TAE_5x7Rectangle-3.jpg
-      quote: |
-        Quote 2
-    - author: Name
+      quote: Quote 2
+    - author: Maria Park
       image: /img/TAE_5x7Rectangle-2.jpg
-      quote: |
-        Quote 3
+      quote: >-
+        My husband and I left our wedding day with the notion that everything
+        went perfectly. The more I spoke with family & friends, the more that
+        this notion was confirmed. Many guests and friends raved of Alice and
+        her organized and get-sh!t done attitude.
 contact:
   buttonlabel: Click to fill out the form
   buttonurl: 'http://www.example.com'
