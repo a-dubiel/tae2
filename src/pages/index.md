@@ -84,18 +84,18 @@ singleimage2: /img/TAE_fullwidthstrip-1.jpg
 testimonials:
   slider:
     - author: Oprah & Stedman
-      image: /img/TAE_square-5.jpg
+      image: /img/TAE_5x7Rectangle-4.jpg
       quote: >
         My husband and I left our wedding day with the notion that everything
         went perfectly. The more I spoke with family & friends, the more that
         this notion was confirmed. Many guests + friends raved of Alice and her
         get-sh!t done attitude.
     - author: Name
-      image: /img/TAE_5x7Rectangle-1.jpg
+      image: /img/TAE_5x7Rectangle-3.jpg
       quote: |
         Quote 2
     - author: Name
-      image: /img/TAE_square-7.jpg
+      image: /img/TAE_5x7Rectangle-2.jpg
       quote: |
         Quote 3
 contact:
