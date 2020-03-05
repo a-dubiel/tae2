@@ -80,7 +80,7 @@ about:
     - image: /img/profile.jpg
     - image: /img/what-i-can-do.jpg
     - image: /img/what-i-can-do.jpg
-singleimage2: /img/TAE-fullwidthstrip-1.jpg
+singleimage2: /img/TAE_fullwidthstrip-1.jpg
 testimonials:
   slider:
     - author: Oprah & Stedman
