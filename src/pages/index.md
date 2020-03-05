@@ -91,7 +91,7 @@ testimonials:
         this notion was confirmed. Many guests + friends raved of Alice and her
         get-sh!t done attitude.
     - author: Name
-      image: /img/TAE_square-6.jpg
+      image: /img/TAE_5x7Rectangle-1.jpg
       quote: |
         Quote 2
     - author: Name
