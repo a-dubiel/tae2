@@ -90,9 +90,13 @@ testimonials:
         everyone else, including us! She had the run of show memorized, the
         set-up flow planned out perfectly, plus, she’d introduced herself to all
         our vendors, key friends and family without us having to do a thing!"
-    - author: Name
+    - author: Katherine Lehr
       image: /img/TAE_5x7Rectangle-3.jpg
-      quote: '"Quote 2"'
+      quote: >-
+        "You want your wedding day to be flawless, but a lot of times there’s
+        little unexpected glitches along the way. Alice has a plan for
+        everything and makes sure you have nothing to worry about except
+        enjoying your perfect wedding day. She is the BEST!"
     - author: Maria Park
       image: /img/TAE_5x7Rectangle-2.jpg
       quote: >-
