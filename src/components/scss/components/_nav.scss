@@ -80,9 +80,55 @@
   width: auto;
   position: relative;
   bottom: -3px;
+  overflow: visible !important;
 
   @include media-above("xl") {
     height: 2.2vw;
+  }
+
+  &:hover {
+    path {
+      animation: bounce linear 0.8s infinite;
+    }
+  }
+
+  path {
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
