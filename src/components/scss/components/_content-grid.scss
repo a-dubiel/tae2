@@ -203,6 +203,10 @@
 
 .content-grid__img--jlo {
   border-bottom: 3px solid $border-color;
+
+  @include media-above("lg") {
+    border-bottom: 0;
+  }
 }
 
 .content-grid__title {
