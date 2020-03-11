@@ -13,19 +13,12 @@
 }
 
 .stripes__content {
-  width: 700%;
+  width: 20000%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -500%;
-
-  &:nth-child(2) {
-    left: -1400%;
-  }
-
-  &:nth-child(3) {
-    left: -2100%;
-  }
+  left: -19000%;
+  will-change: transform;
 
   background-image: linear-gradient(
     45deg,
@@ -38,7 +31,7 @@
     $brand-peach 100%
   );
   background-size: 77.78px 77.78px;
-  animation: stripes 320s infinite linear;
+  animation: stripes 10000s infinite linear;
 }
 
 @keyframes stripes {
