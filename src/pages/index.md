@@ -79,7 +79,7 @@ about:
   slider:
     - image: /img/profile.jpg
     - image: /img/what-i-can-do.jpg
-    - image: /img/what-i-can-do.jpg
+    - image: /img/TAE_square-3.jpg
 singleimage2: /img/TAE_fullwidthstrip-1.jpg
 testimonials:
   slider:
