@@ -106,7 +106,7 @@ testimonials:
         her organized, get-sh!t done attitude."
 contact:
   buttonlabel: Click to fill out the form
-  buttonurl: 'http://www.example.com'
+  buttonurl: 'https://chialice.typeform.com/to/jTp6Qj'
   contacttext: "If you have specific questions and would like to \Pchat please call or email me, thank you!"
   email: alice@type_a_events.com
   facebook: 'https://facebook.com'
