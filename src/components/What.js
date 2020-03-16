@@ -23,7 +23,7 @@ const What = ({ data }) => {
             <span>do for you</span>
           </h2>
         </div>
-        <div className="content-grid__img">
+        <div className="content-grid__img u-border-bottom-mobile">
           <img
             sizes={`${data.image.childImageSharp.fluid.sizes}`}
             src={`${data.image.childImageSharp.fluid.src}`}

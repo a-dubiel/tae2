@@ -17,7 +17,7 @@
 
 .header__logo {
   background-color: $brand-light-blue;
-  padding: $space-sm $space;
+  padding: $space-sm 0;
 
   @include media-above("md") {
     padding: $space $space-md;

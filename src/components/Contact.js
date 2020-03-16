@@ -27,7 +27,7 @@ const Contact = ({ data }) => (
             href={`${data.buttonurl}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="button u-mb4 button--sm"
+            className="button u-mb4 button--sm button--form"
           >
             {data.buttonlabel}
           </a>

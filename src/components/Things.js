@@ -9,7 +9,7 @@ const Things = ({ things }) => {
   });
   return (
     <section className={`content-grid u-border-bottom`}>
-      <div className="content-grid__item content-grid__item--top content-grid__item--bg-peach">
+      <div className="content-grid__item content-grid__item--top content-grid__item--bg-peach u-border-bottom-mobile">
         <div className="content-grid__text">
           <h3>{things.dotitle}</h3>
           <ul className={`${inView ? "is-visible" : ""}`}>

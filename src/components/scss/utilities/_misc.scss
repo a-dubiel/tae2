@@ -94,3 +94,9 @@
   //   border-bottom: 3px solid $border-color;
   // }
 }
+
+.u-border-bottom-mobile {
+  @include media-below("lg") {
+    border-bottom: 3px solid $border-color;
+  }
+}

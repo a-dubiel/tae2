@@ -168,6 +168,12 @@ input[type="submit"] {
   }
 }
 
+.button--form {
+  @include media-below("md") {
+    font-size: 15px;
+  }
+}
+
 @keyframes bounce {
   0%,
   20%,
