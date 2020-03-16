@@ -28,7 +28,7 @@ export default class About extends React.Component {
     };
     return (
       <section id="about" className="content-grid u-border-bottom">
-        <div className="content-grid__slider u-border-bottom">
+        <div className="content-grid__slider u-border-bottom u-overflow-hidden">
           <div className="content-grid__title">
             <h2>
               <span>About</span>

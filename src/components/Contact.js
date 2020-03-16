@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Contact = ({ data }) => (
-  <section id="contact" className="content-grid u-border-bottom">
+  <section
+    id="contact"
+    className="content-grid u-border-bottom u-overflow-hidden"
+  >
     <div className="content-grid__item content-grid__item--top">
       <div className="content-grid__title">
         <h2>
