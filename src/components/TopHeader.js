@@ -7,6 +7,16 @@ export default class TopHeader extends React.Component {
   constructor(props) {
     super(props);
     this.nextSlide = this.nextSlide.bind(this);
+    this.state = {
+      sliderOne: null,
+      sliderTwo: null
+    };
+  }
+  componentDidMount() {
+    this.setState({
+      sliderOne: this.sliderOne,
+      sliderTwo: this.sliderTwo
+    });
   }
   nextSlide() {
     this.sliderOne.slickNext();
@@ -18,15 +28,14 @@ export default class TopHeader extends React.Component {
     const settings = {
       arrows: false,
       speed: 1000,
-      autoplaySpeed: 5000,
       autoplay: true,
-      slidesToShow: 1
+      slidesToShow: 1,
+      // draggable: false,
+      autoplaySpeed: 5000
     };
     const settingsTwo = {
       arrows: false,
       speed: 1000,
-      autoplaySpeed: 5000,
-      autoplay: true,
       slidesToShow: 1,
       fade: true
     };
@@ -56,7 +65,11 @@ export default class TopHeader extends React.Component {
           <div className="header__sliders">
             <div className="header__row">
               <div className="main-slider--one">
-                <Slider ref={slider => (this.sliderOne = slider)} {...settings}>
+                <Slider
+                  ref={slider => (this.sliderOne = slider)}
+                  asNavFor={this.state.sliderTwo}
+                  {...settings}
+                >
                   {slider.slides.map(item => (
                     <div key={item.text} className="main-slider__slide--top">
                       <div
@@ -81,6 +94,7 @@ export default class TopHeader extends React.Component {
 
                   <Slider
                     ref={slider => (this.sliderTwo = slider)}
+                    asNavFor={this.state.sliderOne}
                     {...settingsTwo}
                   >
                     {slider.slides.map(item => (

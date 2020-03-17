@@ -7,6 +7,7 @@
     padding-bottom: 70%;
     background-size: cover;
     width: 100%;
+    background-color: $brand-peach;
   }
 }
 
@@ -46,6 +47,7 @@
   }
 
   .photo-slider____item {
+    background-color: $brand-peach;
   }
 
   .photo-slider__img {
@@ -53,5 +55,6 @@
     left: 0;
     object-fit: cover;
     height: 100%;
+    background-color: $brand-peach;
   }
 }

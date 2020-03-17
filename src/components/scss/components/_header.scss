@@ -12,6 +12,7 @@
 
   @include media-above("xl") {
     height: calc(100vh - 80px);
+    min-height: 700px;
   }
 }
 

@@ -7,6 +7,16 @@ export default class Testimonials extends React.Component {
     super(props);
     this.nextSlide = this.nextSlide.bind(this);
     this.prevSlide = this.prevSlide.bind(this);
+    this.state = {
+      sliderOne: null,
+      sliderTwo: null
+    };
+  }
+  componentDidMount() {
+    this.setState({
+      sliderOne: this.sliderOne,
+      sliderTwo: this.sliderTwo
+    });
   }
   nextSlide() {
     this.sliderOne.slickNext();
@@ -21,14 +31,12 @@ export default class Testimonials extends React.Component {
     const settings = {
       arrows: false,
       speed: 1000,
-      autoplay: false,
       slidesToShow: 1
     };
 
     const settingsTwo = {
       arrows: false,
       speed: 1000,
-      autoplay: false,
       slidesToShow: 1,
       fade: true
     };
@@ -56,6 +64,7 @@ export default class Testimonials extends React.Component {
             </button>
             <Slider
               ref={slider => (this.sliderOne = slider)}
+              asNavFor={this.state.sliderTwo}
               className="photo-slider--testimonials"
               {...settings}
             >
@@ -88,6 +97,7 @@ export default class Testimonials extends React.Component {
             <div className="quote-slider">
               <Slider
                 ref={slider => (this.sliderTwo = slider)}
+                asNavFor={this.state.sliderOne}
                 {...settingsTwo}
                 className="quote-slider__instance"
               >
