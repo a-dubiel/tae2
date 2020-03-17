@@ -111,7 +111,10 @@ contact:
   facebook: 'https://facebook.com'
   image: /img/jlo.jpg
   instagram: 'https://instagram.com'
-  introtext: "I would love to hear all about your future big\P day and how I fit into the puzzle. Please fill out \Pthis tidy little form, so I can get as much\P information about your needs as possible."
+  introtext: >-
+    I would love to hear all about your future big day and how I fit into the
+    puzzle. Please fill out this tidy little form, so I can get as much
+    information about your needs as possible.
   phone: +1 206-240-6518
   pressemail: info@type_a_events.com
 ---
