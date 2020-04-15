@@ -107,7 +107,7 @@ contact:
   buttonlabel: Click to fill out the form
   buttonurl: 'https://chialice.typeform.com/to/jTp6Qj'
   contacttext: "If you have specific questions and would like to \Pchat please call or email me, thank you!"
-  email: alice@type_a_events.com
+  email: alice@type-a-events.com
   facebook: 'https://facebook.com'
   image: /img/jlo.jpg
   instagram: 'https://instagram.com'
@@ -116,6 +116,6 @@ contact:
     puzzle. Please fill out this tidy little form, so I can get as much
     information about your needs as possible.
   phone: +1 206-240-6518
-  pressemail: info@type_a_events.com
+  pressemail: info@type-a-events.com
 ---
 
