@@ -9,13 +9,13 @@ export default class TopHeader extends React.Component {
     this.nextSlide = this.nextSlide.bind(this);
     this.state = {
       sliderOne: null,
-      sliderTwo: null
+      sliderTwo: null,
     };
   }
   componentDidMount() {
     this.setState({
       sliderOne: this.sliderOne,
-      sliderTwo: this.sliderTwo
+      sliderTwo: this.sliderTwo,
     });
   }
   nextSlide() {
@@ -31,13 +31,13 @@ export default class TopHeader extends React.Component {
       autoplay: true,
       slidesToShow: 1,
       // draggable: false,
-      autoplaySpeed: 5000
+      autoplaySpeed: 5000,
     };
     const settingsTwo = {
       arrows: false,
       speed: 1000,
       slidesToShow: 1,
-      fade: true
+      fade: true,
     };
     return (
       <React.Fragment>
@@ -66,16 +66,16 @@ export default class TopHeader extends React.Component {
             <div className="header__row">
               <div className="main-slider--one">
                 <Slider
-                  ref={slider => (this.sliderOne = slider)}
+                  ref={(slider) => (this.sliderOne = slider)}
                   asNavFor={this.state.sliderTwo}
                   {...settings}
                 >
-                  {slider.slides.map(item => (
+                  {slider.slides.map((item) => (
                     <div key={item.text} className="main-slider__slide--top">
                       <div
                         className="main-slider__photo"
                         style={{
-                          backgroundImage: `url(${item.image.childImageSharp.fluid.src})`
+                          backgroundImage: `url(${item.image.childImageSharp.fluid.src})`,
                         }}
                       />
                     </div>
@@ -93,11 +93,11 @@ export default class TopHeader extends React.Component {
                   <h1>Day of Wedding Coordination for</h1>
 
                   <Slider
-                    ref={slider => (this.sliderTwo = slider)}
+                    ref={(slider) => (this.sliderTwo = slider)}
                     asNavFor={this.state.sliderOne}
                     {...settingsTwo}
                   >
-                    {slider.slides.map(item => (
+                    {slider.slides.map((item) => (
                       <div key={item.text} className="main-slider__slide">
                         <div className="main-slider__item">
                           <div className="main-slider__content">
@@ -108,7 +108,7 @@ export default class TopHeader extends React.Component {
                                   __html: md
                                     .render(item.text)
                                     .replace(/<strong>/g, "<u>")
-                                    .replace(/<\/strong>/g, "</u>")
+                                    .replace(/<\/strong>/g, "</u>"),
                                 }}
                               />
                             </div>
@@ -128,5 +128,5 @@ export default class TopHeader extends React.Component {
 }
 
 TopHeader.propTypes = {
-  slider: PropTypes.object
+  slider: PropTypes.object,
 };
